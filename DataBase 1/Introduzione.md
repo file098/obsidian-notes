@@ -76,3 +76,38 @@ Tre diversi livelli di descrizione dei dati (schemi):
 3. livello fisico: raccoglie le informazioni per la memorizzazione dei dati (più basso)
 
 
+#### Livello fisico
+
+Descrive lo schema fisico o interno
+
+#### Livello logico
+
+Descrive come deve apparire la struttura della base di dati ad una certa applicazione
+
+
+**Indipendenza fisica**: i programmi applicativi non devono essere modificati in seguito a modifiche dell'organizzazione fisica dei dati, per esempio
+- strutture dati ausiliarie
+- modifica della distribuzione
+Se si deve risalire spesso agli studenti che hanno sostenuto un particolare esame: 
+
+```sql
+CREATE INDEX IndiceIdeC ON Esami (IdeC);
+```
+
+**Indipendenza logica**: i programmi applicativi non devono essere modificati in seguito a modifiche dello schema logico
+- difficile da ottenere
+- richiederà la ridefinizione della schema esterno
+
+Esempio: per suddividere la collezioni degli studenti part-time e full-time:
+
+```sql
+CREATE TABLE StudentiFull (...);
+CREATE TABLE StudentiPart (...);
+
+CREATE VIEW Studenti AS 
+	SELECT * FROM StudentiFull
+	UNION
+	SELECT * FROM StudentiPart;
+
+```
+
