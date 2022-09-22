@@ -1,0 +1,154 @@
+{
+  "main": {
+    "id": "08d20c37e041c04c",
+    "type": "split",
+    "children": [
+      {
+        "id": "2435035046010974",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "DataBase 1/Introduzione.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "653f3697186e7972",
+    "type": "split",
+    "children": [
+      {
+        "id": "d59be2fc08b987b4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a313e689ba0dcfa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "7ce101b81ee8e5e2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "93d8809186355bdc",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "c3cd2a1ee1caeec3",
+    "type": "split",
+    "children": [
+      {
+        "id": "692210917b50b6dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69eb99f2a4fdce75",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "DataBase 1/Introduzione.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b350b9c2d8edf7f9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "DataBase 1/Introduzione.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8b1f2ac12042f614",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "99361a862013f3c3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "DataBase 1/Introduzione.md"
+              }
+            }
+          },
+          {
+            "id": "2350742868d17756",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 202.5,
+    "collapsed": true
+  },
+  "active": "2435035046010974",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "Calcolo 1/Lezione 1.md",
+    "Pasted image 20220919093733.png",
+    "Screenshot from 2022-08-23 11-08-45 1.png.md",
+    "ASD 1/Introduzione.md",
+    "Algebra Lineare/Matrici.md",
+    "Algebra Lineare/Spazi Vettoriali.md",
+    "Screenshot from 2022-08-23 11-08-45.png",
+    "Screenshot from 2022-08-23 11-08-45 1.png",
+    "Algebra Lineare/Gruppi e campi.md"
+  ]
+}
