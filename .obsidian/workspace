@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DataBase 1/Introduzione.md",
+            "file": "ASD 1/Introduzione.md",
             "mode": "source",
             "source": false
           }
@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataBase 1/Introduzione.md",
+                "file": "ASD 1/Introduzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DataBase 1/Introduzione.md",
+                "file": "ASD 1/Introduzione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DataBase 1/Introduzione.md"
+                "file": "ASD 1/Introduzione.md"
               }
             }
           },
@@ -137,17 +136,17 @@
     "direction": "horizontal",
     "width": 202.5
   },
-  "active": "99361a862013f3c3",
+  "active": "2435035046010974",
   "lastOpenFiles": [
+    "ASD 1/Introduzione 1.md",
+    "ASD 1/Introduzione.md",
+    "Pasted image 20220919093733.png",
+    "Basi di Dati 1/Introduzione.md",
     "Untitled.md",
     "Calcolo 1/Lezione 1.md",
-    "Pasted image 20220919093733.png",
     "Screenshot from 2022-08-23 11-08-45 1.png.md",
-    "ASD 1/Introduzione.md",
     "Algebra Lineare/Matrici.md",
     "Algebra Lineare/Spazi Vettoriali.md",
-    "Screenshot from 2022-08-23 11-08-45.png",
-    "Screenshot from 2022-08-23 11-08-45 1.png",
-    "Algebra Lineare/Gruppi e campi.md"
+    "Screenshot from 2022-08-23 11-08-45.png"
   ]
 }

@@ -1,14 +1,21 @@
+---
+date created: 2022-09-27 12:29
+---
+
 2022-09-19
 
 # Numeri di Fibonacci
+
 Vogliamo scrivere un algoritmo che descriva la formula di Fibonacci.
 
-$$F_n = \begin{equation}
-		  \begin{cases}
-		  1, ... \quad \text{se} \quad n=1,2 \\
-		  F_{n-1} + F_{n-2} \quad \text{se} \quad n \geq 3 \\
-		  \end{cases}
-		\end{equation}$$
+$$F_n = 
+\begin{align}
+  \begin{cases}
+  &1, ... & \text{se} \quad n=1,2 \\
+  &F_{n-1} + F_{n-2} & \text{se} \quad n \geq 3 \\
+  \end{cases}
+\end{align}$$
+
 
 2022-09-20
 
@@ -102,17 +109,76 @@ Fib2(int n) -> int
 | 3   | 2+1+1 = 4 |
 | 4   | 2+4+1 = 7 |
 
-$$T(n) = \begin{equation}
-		  \begin{cases}
-		  1 \qquad \text{se} \qquad n=1,2 \\
-		  2 + T_{n-1} + T_{n-2} \qquad n \geq 3 \\
-		  \end{cases}
-		\end{equation}$$
+$$
+T(n) = 
+	\begin{align}
+	  \begin{cases}
+	    &1 \qquad \text{se} & n=1,2 \\
+	    &2 + T_{n-1} + T_{n-2} & n \geq 3 \\
+	  \end{cases}
+	\end{align}$$
 
 
-# Albero delle ricorsioni
+## Albero delle ricorsioni
 
 COPIA APPUNTI SLIDES SU ALBERI !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-Complessità dei Fib2 = $T(n) = i(T_n) *2 f(T_n)$ dove i = n nodi interni e f = foglie
+
+Formula generale: $T(n) = 2 * i(T_{n}) + f(T_{n})$ dove $i = \text{n}$ nodi interni e $f = \text{foglie}$ di $T(n)$. 
+
+--- 
+
+2022-09-27
+
+#### Proposizione 1:
+Sia $T_n$ l'albero di ricorsione relativo alla chiamata $\text{Fib2}(n)$, allora il numero di foglie di $f(T_n) = F_n cioè il numero di nodi foglia è uguale al n-esimo numero di Fibonacci. 
+
+Dimostrazione: 
+
+Passo induttivo $n \geq 3$
+
+![[Pasted image 20220927124402.png]]
+
+#### Proposizione 2:
+Sia $T$ un albero dove i nodi interni hanno esattamente 2 figli, allora: il numero di nodi interni è sempre uguale al numero di foglie - 1
+
+$$i(T) = f(T)-1$$
+
+**Dimostrazione**: induzione su numero di noti di T
+
+PER CASA
+
+- caso base 1,2
+- passo induttivo con n>=2
+	- $\hat{T} = f(T) - 1 + i(T)$
+	- $i(\hat{T}) = f(\hat{T} -1)$
+	- obiettivo: $i(T) = f(T)-1$
+
+<mark>Forma completa</mark>: $T(n) = 2(F_n - 1) + F_n = 3F_{n} - 2 \approx F_n$  
+
+#### Proposizione 3:
+$$\forall n \geq 6 \qquad F_{n} \geq 2^{\frac{n}{2}}$$
+**Dimostrazione**:
+- base $n=6,7$
+- passo induttivo $n \geq 8$
+	- obiettivo: $F_{n} \geq 2^{\frac{n}{2}}$
+	- $F_n = F_{n-1} - F_{n-2}$
+	- $F_{n-1}\geq n^\frac{n-1}{2}$ e lo stesso vale per $F_{n-2}$
+
+
+## Algoritmo Iterativo
+
+```pseudo
+Fib3(int n) -> n
+
+
+alloca spazio per array di n interi F
+F[1] = 1; F[2] = 1;
+for i = 3 to n
+	F[i] = F[i-1] + F[i-2]
+return F[n] 
+```
+
+
+Tempo di esecuzione: $T(n) = 3 + (n-1) + (n-2) = 2n \approx n$
 
