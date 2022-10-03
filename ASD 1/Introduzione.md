@@ -1,7 +1,3 @@
----
-date created: 2022-09-27 12:29
----
-
 2022-09-19
 
 # Numeri di Fibonacci
@@ -131,7 +127,7 @@ Formula generale: $T(n) = 2 * i(T_{n}) + f(T_{n})$ dove $i = \text{n}$ nodi inte
 2022-09-27
 
 #### Proposizione 1:
-Sia $T_n$ l'albero di ricorsione relativo alla chiamata $\text{Fib2}(n)$, allora il numero di foglie di $f(T_n) = F_n cioè il numero di nodi foglia è uguale al n-esimo numero di Fibonacci. 
+Sia $T_n$ l'albero di ricorsione relativo alla chiamata $\text{Fib2}(n)$, allora il numero di foglie di $f(T_n) = F_n$ cioè il numero di nodi foglia è uguale al n-esimo numero di Fibonacci. 
 
 Dimostrazione: 
 
@@ -146,13 +142,46 @@ $$i(T) = f(T)-1$$
 
 **Dimostrazione**: induzione su numero di noti di T
 
-PER CASA
-
 - caso base 1,2
-- passo induttivo con n>=2
+- passo induttivo con $n \geq 3$
 	- $\hat{T} = f(T) - 1 + i(T)$
 	- $i(\hat{T}) = f(\hat{T} -1)$
 	- obiettivo: $i(T) = f(T)-1$
+
+![[Pasted image 20220927171321.png]]
+
+Dobbiamo dimostrare che $i(T_{n}-1) = f(T_{n}-1)$
+
+Consideriamo l'albero di partenza e aggiungiamo due foglie ad un nodo foglia già esistente: $f(T_{n}) = f(T_{n-1}) + 2$.
+e di conseguenza anche il numero di nodi viene aggiornato: $i(T_{n)}= i(T_{n-1}) +1$.
+Sappiamo che: 
+- $i(T_n) = i(\hat{T_{n}}) + 1$
+- $f(T_n) = f(\hat{T_n}) + 2$
+
+
+$$
+\begin{align}
+& i(T_{n}) =  f(T_{n}) - 1 \\
+& \text{aggiungiamo le due foglie} \\
+& = f(\hat{T_{n}}) - 1 + 2 \\
+& = f(\hat{T_{n}}) + 1
+\end{align}
+$$
+e facciamo lo stesso per i nodi
+
+$$
+\begin{align}
+& f(T_{n}) - 1 = i(T_{n})\\
+& f(T_{n}) - 1 = i(\hat{T_{n}}) + 1 \\
+& f(T_{n}) - 1 = i(\hat{T_{n}}) + 1 \\
+\end{align}
+$$
+
+Quindi abbiamo 
+$$i(\hat{T_{n})} + 1 = f(\hat{T_{n})} + 2$$
+$$
+
+$$
 
 <mark>Forma completa</mark>: $T(n) = 2(F_n - 1) + F_n = 3F_{n} - 2 \approx F_n$  
 
@@ -169,7 +198,7 @@ $$\forall n \geq 6 \qquad F_{n} \geq 2^{\frac{n}{2}}$$
 ## Algoritmo Iterativo
 
 ```pseudo
-Fib3(int n) -> n
+Fib3(int n) -> int
 
 
 alloca spazio per array di n interi F
@@ -179,6 +208,29 @@ for i = 3 to n
 return F[n] 
 ```
 
+Complessità temporale: $T(n) = 3 + (n-1) + (n-2) = 2n \approx n$
+Complessità spaziale: n
 
-Tempo di esecuzione: $T(n) = 3 + (n-1) + (n-2) = 2n \approx n$
 
+```pseudo
+Fib4(int n) -> int
+a = 1, b = 1
+for i = 3 to n
+	c = a + b
+	a = b
+	b = c
+return c
+```
+
+Complessità temporale = $T(n) \approx n$
+Complessità spaziale: 3
+
+
+## Analisi algoritmi 
+
+|      | correttezza | complessità temp    | complessità spaziale |
+| ---- | ----------- | ------------------- | -------------------- |
+| fib1 | no          | costante            | costante             |
+| fib2 | si          | esponenziale: $2^n$ | lineare              |
+| fib3 | si          | lineare             | lineare              |
+| fib4 | si          | lineare             | costante             |
