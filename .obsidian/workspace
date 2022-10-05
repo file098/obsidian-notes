@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -139,15 +138,15 @@
   },
   "active": "2435035046010974",
   "lastOpenFiles": [
+    "ASD 1/Complessità.md",
     "ASD 1/Introduzione.md",
+    "Pasted image 20220919093733.png",
     "ASD 1/Confronto tra algoritmi.md",
     "Basi di Dati 1/Progettazione di un Database.md",
     "Basi di Dati 1/Introduzione.md",
-    "Pasted image 20220919093733.png",
     "Pasted image 20220927124402.png",
     "Pasted image 20220927171321.png",
     "ASD 1/Introduzione 1.md",
-    "Untitled.md",
-    "Calcolo 1/Lezione 1.md"
+    "Untitled.md"
   ]
 }

@@ -3,7 +3,7 @@
 # Confronto tra algoritmi
 
 Una funzione $f(n)$ si dice che appartiene alla classe 
-$$O(g(n)) =\begin{align}
+$$O(g(n)) = \begin{align}
 \begin{cases}
 f(n) \quad | \\
 & \exists c > 0 \\
@@ -136,15 +136,24 @@ $$f(n) = O(g(n)) \iff g(n) = \Omega(f(n))$$
 Dim: $(\implies)$
 
 Ipotesi:
+
 $$\begin{align} \exists c > 0 \quad \exists n \in \mathbb{N} \quad \text{t.c.} \quad \forall n \ge n_{0}:\\
 & f(n) \leq c * g(n) \end{align}$$
 
 Tesi: 
-$$\begin{align} \exists c' > 0 \quad \exists n_{0}' \in \mathbb{N} \quad \text{t.c.} \quad \forall n \ge n_{0}':\\
-& c*f(n) \leq g(n) \end{align}$$ ?
+
+$$
+\begin{align}
+\exists c' > 0 \quad \exists n_{0}' \in \mathbb{N} \quad \text{t.c.} \quad \forall n \ge n_{0}': \\
+& c*f(n) \leq g(n) 
+\end{align}
+$$
+
 
 Si ponga: $c' = \cfrac{1}{c} > 0$
+
 $$n_{0}'= n_{0}$$
+
 ### Proprietà transitiva
 
 Se $f(n) = O(g(n))$ e $g(n) = O(h(n))$
@@ -169,3 +178,101 @@ $$
 & f(n) \leq c_1 g(n) \land g(n) \leq c_{2}h(n) \\
 & f(n) \leq c_{1}c_{2}h(n) \\
 \end{align}$$
+2022-10-05 
+
+## Osservazioni
+
+$$
+\lim_{n \rightarrow \infty} \cfrac{f(n)}{g(n)} = 
+\begin{cases}  
+o & \implies & f(n) = O(g(n)) \\
+l \qquad (0 < l < \infty) & \implies & f(n) = \Theta(g(n))  \\
+\infty & \implies & f(n) = \Omega(g(n))
+\end{cases}
+$$
+
+
+1) $o(g(n)) \cap \Omega(g(n)) = \emptyset$
+2) $\omega(g(n)) \cap O(g(n)) = \emptyset$
+
+Dimostrazione (1) per assurdo:
+
+Partiamo con la supposizione che $\color{red} \exists f(n) \in o(g(n)) \cap \Omega(g(n))$
+Quindi:
+$$
+\begin{align}
+\forall c > 0 \quad \exists n_{0}\in \mathbb{N} \quad t.c. \quad \forall n > n_{0} \quad f(n) < c * g(n) \\
+\exists c' > 0 \quad \exists n_{0}' \in \mathbb{N} \quad t.c. \quad \forall n > n_{0}' \quad c' * g(n) < f(n)   \\
+\end{align}
+$$
+
+se e solo se $n \geq max\{n_{0}, n_{0}'\}$ si avrebbe $\color{red} f(n) < c' * g(n) \leq f(n)$ il che è assurdo perché avrei trovato un numero strettamente minore di se stesso. 
+
+**Proposizione**
+
+Se $\lim_{n \rightarrow \infty} \cfrac{f(n)}{g(n)} = l \quad (0 < l < \infty)$ allora $f(n) = \Theta(g(n))$.
+
+> **Nota**
+> Se il limite del rapporto produce un valore costante, allora f(n) e g(n) sono uguali asintoticamente
+
+Esempio: 
+
+$1 + \sin(n)n = O(n)$ dove:
+- $f(n) = 1 + \sin(n)n$
+- $g(n) = O(n)$
+
+Sappiamo che $-1 \leq \sin(n) \leq 1$ dal comportamento della funzione seno.
+
+$$
+\begin{align}
+\forall n \geq 1: \\
+& 0 \leq (1 + \sin(n)) \leq 2 \\
+& 0 \leq (1 + \sin n)n \leq 2n & & \text{verificato}
+\end{align}
+$$
+Vediamo come si comporta con il limite
+
+$$
+\lim_{n \rightarrow \infty} \cfrac{(1 + \sin n)n}{n} = (1 \sin n)
+$$
+dove il limite non esiste perché è una funzione armonica. 
+
+## Polinomi
+
+Osserviamo $3n^{3} + 2n^{2}+6n+5=\Theta(n^{3})$
+
+
+$$
+\begin{align}
+\lim_{n \rightarrow \infty} \cfrac{3n^{3} + 2n^{2}+6n+5}{n^{3}} = \\
+\lim_{n \rightarrow \infty} 3 + \cfrac{2}{n} + \cfrac{6}{n^{2}}+ \cfrac{5}{n^{3}} = 3 \\
+\end{align}$$
+
+> **Nota**
+> Si va a cercare il termine dominante e gli altri possono essere trascurati
+> Ex: $27n^{2} + n^{2} \log n + \sqrt{n} + \log n^{2} = \Theta(n^{2} \log n)$
+
+### Proprietà
+
+Forma compatta: $f(n) + o(f(n)) = \Theta(f(n))$
+
+Forma estesa:
+
+$$
+
+\begin{align}
+g(n) = \Theta(f(n)) \Longleftarrow
+
+\begin{cases}
+    g(n) = f(n) + h(n) \\ \\
+    h(n) = o(f(n))
+\end{cases} 
+
+\end{align} 
+
+$$
+$$
+\lim_{n \rightarrow \infty} \cfrac{g(n)}{f(n)} = \lim_{n \rightarrow \infty} \cfrac{f(n) + h(n)}{f(n)} = \lim_{n \rightarrow \infty} 1 + \cfrac{h(n)}{f(n)} = 1
+$$
+perché $\cfrac{h(n)}{f(n)}$ tendo a 0 dato che $f(n)$ tende a infinito e cresce più velocemente di $h(n)$.
+
