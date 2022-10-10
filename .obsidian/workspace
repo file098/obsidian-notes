@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "ASD 1/Confronto tra algoritmi.md",
+            "file": "ASD 1/Complessità.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASD 1/Confronto tra algoritmi.md",
+                "file": "ASD 1/Complessità.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASD 1/Confronto tra algoritmi.md",
+                "file": "ASD 1/Complessità.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASD 1/Confronto tra algoritmi.md"
+                "file": "ASD 1/Complessità.md"
               }
             }
           },
@@ -134,16 +134,17 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 202.5,
+    "collapsed": true
   },
   "active": "2435035046010974",
   "lastOpenFiles": [
-    "ASD 1/Complessità.md",
     "ASD 1/Introduzione.md",
-    "Pasted image 20220919093733.png",
     "ASD 1/Confronto tra algoritmi.md",
     "Basi di Dati 1/Progettazione di un Database.md",
     "Basi di Dati 1/Introduzione.md",
+    "ASD 1/Complessità.md",
+    "Pasted image 20220919093733.png",
     "Pasted image 20220927124402.png",
     "Pasted image 20220927171321.png",
     "ASD 1/Introduzione 1.md",
