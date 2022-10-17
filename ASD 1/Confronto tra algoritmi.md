@@ -102,7 +102,8 @@ n!
 & = 1 * 2 * 3 ... n \\
 & \leq n * n * n ... n \\
 & = n^n
-\end{align}$$ $\log{n} = O(n)$
+\end{align}$$ 
+$\log{n} = O(n)$
 --- 
 
 $$n! = \Omega(2^n)$$

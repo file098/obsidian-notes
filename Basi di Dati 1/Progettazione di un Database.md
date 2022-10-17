@@ -94,3 +94,5 @@ Un **associazione** R(X,Y) fra due collezioni di entità X ed Y è un insieme di
 Un associazione è caratterizzata dalle seguenti proprietà strutturali:
 - molteplicità (o cardinalità)
 - totalità
+
+
