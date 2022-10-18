@@ -208,7 +208,6 @@ Dunque $T(n) = \Theta(n^{2})$
 
 $$T(n) = aT(\cfrac{n}{b}) + f(n)$$
 
-
 ![[Pasted image 20221011150521.png]]
 
 1) al livello $i \geq 0$:
@@ -222,4 +221,62 @@ Quindi mettendo tutto insieme otteniamo
 $$T(n) = \sum\limits_{i=0}^{\text{liveli}} a^{i} f(\cfrac{n}{b^{i}})$$
 
 dove il numero di livelli è $\cfrac{n}{b^{i}} \rightarrow n = b^{i} \rightarrow i=\log_{b}n$
+
+
+$$\text{n nodi foglia} = a^{\log_b n}$$
+
+$$\begin{align} a^{\log_{b}n} & = \\
+& = (a^{\log_{a} n})^{\log_{b} n} \\
+& = n^{\log_{b} a}
+& = n^{d}
+\end{align}$$
+
+$$\begin{align} 
+\sum\limits_{i=0}^{\log_{b} n} a^{i} & =\\
+& = \cfrac{a^{\log_{b}n}}{a-1} \\
+& = \cfrac{a * a^{\log_{b}n} -1}{a-1} \\
+& = \cfrac{a * a^{d} -1}{a-1} \\
+& = \Theta(n^{d}) \\
+\end{align}$$
+
+#### Caso 1 dim
+
+Vogliamo dimostrare che: $$f(n) = O(n^{d - \epsilon})$$
+
+$$\begin{align}
+a^{i} f(\cfrac{n}{b^{i}}) & = \\
+& = a^{i} O\left((\cfrac{n}{b^{i}})^{d - \epsilon}\right) \\
+& = O\left( a^{i} (\cfrac{n}{b^{i}})^{d - \epsilon}\right) \\
+& = O\left( a^{i} \cfrac{n^{d- \epsilon}}{(b^{i})^{d} (b^{i})^{- \epsilon}} \right) \\
+& = O\left((b^{i})^{\epsilon} n^{d - \epsilon} \right) \\
+& = O\left((b^{\epsilon})^{i} n^{d - \epsilon} \right) 
+\end{align}$$
+
+$$\begin{align}
+T(n) & = \sum\limits_{i=0}^{\log_{b}n} a^{i} f(\cfrac{n}{b^{i}})\\
+& = O\left( \sum\limits_{i=0}^{\log_{b}n} (b^{\epsilon})^{i} n^{d - \epsilon} \right)\\
+& = O\left( n^{d - \epsilon} \sum\limits_{i=0}^{\log_{b}n} (b^{\epsilon})^{i} \right)\\
+& = O\left( n^{d - \epsilon} \sum\limits_{i=0}^{\log_{b}n} \cfrac{(b^{\epsilon})^{\log_{b}n +1} -1}{b^{\epsilon} -1} \right) \\
+& = O\left( n^{d - \epsilon} \cfrac{(b^{\epsilon}) n^{\epsilon} -1}{b^{\epsilon} -1} \right) \\
+& = O(n^{d - \epsilon} n^{\epsilon}) \\
+& = O( n^{d}) \\
+\end{align}$$
+
+Quindi abbiamo
+$$T(n) = O(n^{d})$$
+
+#### Caso 2 dim
+
+Vogliamo dimostrare che
+$$f(n) = \Theta(n^{d})$$
+
+$$\begin{align} T(n) & = \Theta(n^{d} \log n) \\
+& = \sum\limits_{i=-}^{\log n} a^{i} f \left( \cfrac{n}{b^{i}} \right) \\ \end{align}$$
+
+$$\begin{align} f \left( \cfrac{n}{b^{i}} \right)  & = a^{i} \Theta \left( \cfrac{n}{(b^{i})^{d}} \right) \\
+& = a^{i} \Theta \left( \cfrac{n}{b^{i}} \right) \\ \end{align}$$
+
+
+#### Caso 3 dim
+
 

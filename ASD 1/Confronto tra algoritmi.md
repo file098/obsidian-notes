@@ -259,21 +259,18 @@ Forma compatta: $f(n) + o(f(n)) = \Theta(f(n))$
 
 Forma estesa:
 
-$$
-
-\begin{align}
+$$\begin{align}
 g(n) = \Theta(f(n)) \Longleftarrow
 
 \begin{cases}
     g(n) = f(n) + h(n) \\ \\
     h(n) = o(f(n))
 \end{cases} 
+\end{align}$$
 
-\end{align} 
-
-$$
 $$
 \lim_{n \rightarrow \infty} \cfrac{g(n)}{f(n)} = \lim_{n \rightarrow \infty} \cfrac{f(n) + h(n)}{f(n)} = \lim_{n \rightarrow \infty} 1 + \cfrac{h(n)}{f(n)} = 1
 $$
+
 perché $\cfrac{h(n)}{f(n)}$ tendo a 0 dato che $f(n)$ tende a infinito e cresce più velocemente di $h(n)$.
 

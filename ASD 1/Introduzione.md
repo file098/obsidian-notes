@@ -30,7 +30,7 @@ Base: $n=1$
 
 $$n =1 \qquad F_1 = \frac{1}{\sqrt{5}} (\phi - \hat{\phi})$$
 
-$$$\frac{1}{\sqrt{5}} * (\frac{1 + \sqrt{5}}{2} - \frac{1 - \sqrt{5}}{2} )$$
+$$\frac{1}{\sqrt{5}} * (\frac{1 + \sqrt{5}}{2} - \frac{1 - \sqrt{5}}{2} )$$
 
 $$\frac{1}{\sqrt{5}} * (\frac{ 1 - 1 + \sqrt{5} - \sqrt{5}}{2}) = 1$$
 

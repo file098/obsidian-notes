@@ -1,8 +1,9 @@
 {
-  "snippets_file": "snippets : It is an obsidian plugin, that replaces your selected text.\n\nalign : $$\\begin{align} \\end{align}$$\nfrac : \\cfrac{}{}\nT : \\Theta\nO : \\Omega\nlim : \\lim_{}\n-> : \\rightarrow\n<- : \\leftarrow",
+  "snippets_file": "snippets : It is an obsidian plugin, that replaces your selected text.\n\nalign : $$\\begin{align} \\end{align}$$\ncases : $$\\begin{align} \\begin{cases} \\end{cases}\\end{align}$$\nfrac : \\cfrac{}{}\nT : \\Theta\nO : \\Omega\nlim : \\lim_{}\n-> : \\rightarrow\n<- : \\leftarrow\n",
   "snippets": [
     "snippets : It is an obsidian plugin, that replaces your selected text.",
     "align : $$\\begin{align} \\end{align}$$",
+    "cases : $$\\begin{align} \\begin{cases} \\end{cases}\\end{align}$$",
     "frac : \\cfrac{}{}",
     "T : \\Theta",
     "O : \\Omega",
