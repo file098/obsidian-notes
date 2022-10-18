@@ -98,7 +98,7 @@ $$\begin{align} T(n) & = 9 T(\cfrac{n}{3}) + n \\
 dove abbiamo che 
 
 $$\begin{align} T(n) & = \\
-\cfrac{n}{3^{k}} = 1 \iff n = 3^{k} \iff k = \log_{3}n \\
+& \cfrac{n}{3^{k}} = 1 \iff n = 3^{k} \iff k = \log_{3}n \\
 & = 9^{\log_{3} n} T(1) + n \cfrac{3^{\log n} -1}{2} \\
 & = 3^{\log_{3} n^{2}} + n \cfrac{n-1}{2} \\
 & = n^{2} + n \cfrac{n-1}{2} \\
@@ -269,10 +269,40 @@ $$f(n) = \Theta(n^{d})$$
 $$\begin{align} T(n) & = \Theta(n^{d} \log n) \\
 & = \sum\limits_{i=-}^{\log n} a^{i} f \left( \cfrac{n}{b^{i}} \right) \\ \end{align}$$
 
-$$\begin{align} f \left( \cfrac{n}{b^{i}} \right)  & = a^{i} \Theta \left( \cfrac{n}{(b^{i})^{d}} \right) \\
-& = a^{i} \Theta \left( \cfrac{n}{b^{i}} \right) \\ \end{align}$$
+$$\begin{align} a^{i} f \left( \cfrac{n}{b^{i}} \right)  & = a^{i} \Theta \left(  \left( \cfrac{n}{b^{i}} \right)^{d} \right) \\
+& = \Theta \left( a^{i} \cfrac{n^{d}}{(b^{i})^{d}} \right) \\ 
+& = \Theta \left( a^{i} \cfrac{n^{d}}{(b^{d})^{i}} \right) \\ 
+& = \Theta(n^{d}) \\ 
+\\
+& \text{complessità totale al livello i-esimo}
+\end{align}$$
 
+$$\begin{align} T(n) & = \\
+& = \sum\limits_{i=0}^{\log n} \Theta(n^{d}) \\
+& = \Theta \left( \sum\limits_{i=0}^{\log_{d} n} n^{d} \right) \\
+& = \Theta \left( n^{d} \log_{b} n + 1 \right) \\
+& = \Theta \left( n^{d} \log_{b} n\right) \\
+\end{align}$$
 
 #### Caso 3 dim
 
 
+Vogliamo dimostrare 
+
+$$\begin{align} & f(n) = \Omega \left( n^{d + \epsilon} \right) \\ 
+\\
+& \exists c <1 \quad t.c. \quad af \left( \cfrac{n}{b} \right) \leq c f(n) 
+\end{align}$$
+
+
+
+$$\begin{align}
+T(n) & = \sum\limits_{i=0}^{\log_{b}n} a^{i} f(\cfrac{n}{b^{i}}) \\
+& \leq \sum\limits_{i=0}^{\log_{b}n} c^{i} f(n) \\
+& = f(n) \sum\limits_{i=0}^{\log_{b}n} c^{i}  \\
+& \leq f(n) \sum\limits_{i=0}^{\infty} c^{i}  \\
+& = f(n) \cfrac{1}{1-c} \\
+& = O\left( f(n) \right)
+\end{align}$$
+
+Quindi $T(n) = O(f(n))$
