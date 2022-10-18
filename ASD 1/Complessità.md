@@ -33,7 +33,8 @@ while <cond> do  <-- O(f(n))
 	block        <-- O(g(n))
 ```
 N(m) = max numero di iterazioni
-Complessità: $O(N(n) (f(n) + g(n)))$
+
+**Complessità**: $O(N(n) (f(n) + g(n)))$
 
 ### Esercizio
 
@@ -50,16 +51,16 @@ MyAlgorithm (int n) -> int
 	else
 		return n
 ```
-Complessità: $T(n) = O(n^2 + 16T(\cfrac{n}{4}))$
+
+**Complessità**: $T(n) = O(n^2 + 16T(\cfrac{n}{4}))$
 
 ## Ricorrenze
 
 ### Metodo dell'iterazione
+
 Supponiamo
 
-$$\begin{align} 
-T(n) = 
-\begin{cases} c + T(\cfrac{n}{2}) & n \geq 2 \\  \\
+$$\begin{align} T(n) = \begin{cases} c + T(\cfrac{n}{2}) & n \geq 2 \\  \\
 1 & n=1 \\
 \end{cases}
 \end{align}$$
@@ -79,12 +80,10 @@ T(n) & = c + T(\cfrac{n}{2})\\
 \end{align}$$
 
 
-$$\begin{align} T(n) = 
-\begin{cases} 
+$$\begin{align} T(n) = \begin{cases} 
 9T(\cfrac{n}{3}) + n & n \geq 2 \\
 1 & n=1 \\
-\end{cases}
-\end{align}$$
+\end{cases} \end{align}$$
 
 $$\begin{align} T(n) & = 9 T(\cfrac{n}{3}) + n \\
 & = 9 [ 9T(\cfrac{n}{3^{2}}) + \cfrac{n}{3}]  +n \\
@@ -97,14 +96,14 @@ $$\begin{align} T(n) & = 9 T(\cfrac{n}{3}) + n \\
 \end{align}$$
 
 dove abbiamo che 
+
 $$\begin{align} T(n) & = \\
 \cfrac{n}{3^{k}} = 1 \iff n = 3^{k} \iff k = \log_{3}n \\
 & = 9^{\log_{3} n} T(1) + n \cfrac{3^{\log n} -1}{2} \\
 & = 3^{\log_{3} n^{2}} + n \cfrac{n-1}{2} \\
 & = n^{2} + n \cfrac{n-1}{2} \\
 & = \Theta(n^{2}) \\
-\end{align}
-$$
+\end{align}$$
 
 ## Metodo della sostituzione
 
@@ -129,8 +128,9 @@ $$\begin{align} T(n) & = \\
 & \leq c * \lfloor \cfrac{n}{2} \rfloor + n \\
 & \leq c * \cfrac{n}{2} + n \\
 & = (\cfrac{c}{2} + 1)n \\
-& \leq c*n = \cfrac{c}{2} + 1 \leq c \iff 1 \leq \cfrac{c}{2} \iff c \geq 2
+& \leq c*n = \cfrac{c}{2} + 1 \leq c \iff 1 \leq \cfrac{c}{2} \iff c \geq 2 \\
 \end{align}$$
+
 Quindi $c=2$ e $n_{0} = 1$.
 
 ## Teorema Master
