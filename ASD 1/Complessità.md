@@ -79,16 +79,14 @@ T(n) & = c + T(\cfrac{n}{2})\\
 \end{align}$$
 
 
-$$\begin{align} 
-T(n) = 
+$$\begin{align} T(n) = 
 \begin{cases} 
 9T(\cfrac{n}{3}) + n & n \geq 2 \\
 1 & n=1 \\
 \end{cases}
 \end{align}$$
 
-$$\begin{align}
-T(n) & = 9 T(\cfrac{n}{3}) + n \\
+$$\begin{align} T(n) & = 9 T(\cfrac{n}{3}) + n \\
 & = 9 [ 9T(\cfrac{n}{3^{2}}) + \cfrac{n}{3}]  +n \\
 & = 9^{2} T(\cfrac{n}{3^{2}} ) + 3n + n \\
 & = 9^{2} [ 9T(\cfrac{n}{3^{3}}) + \cfrac{n}{3^{2}}] + 3n  +n \\
@@ -99,14 +97,12 @@ T(n) & = 9 T(\cfrac{n}{3}) + n \\
 \end{align}$$
 
 dove abbiamo che 
-$$
-\begin{align}
-T(n) & =
+$$\begin{align} T(n) & = \\
 \cfrac{n}{3^{k}} = 1 \iff n = 3^{k} \iff k = \log_{3}n \\
 & = 9^{\log_{3} n} T(1) + n \cfrac{3^{\log n} -1}{2} \\
 & = 3^{\log_{3} n^{2}} + n \cfrac{n-1}{2} \\
 & = n^{2} + n \cfrac{n-1}{2} \\
-& = \Theta(n^{2})
+& = \Theta(n^{2}) \\
 \end{align}
 $$
 
@@ -138,6 +134,7 @@ $$\begin{align} T(n) & = \\
 Quindi $c=2$ e $n_{0} = 1$.
 
 ## Teorema Master
+
 Si basa sul concetto di *divide et impera* con questi steps:
 1) split
 2) risoluzione dei sotto problemi
@@ -158,21 +155,21 @@ abbiamo il teorema **master**
 Sia $d = \log_{b} a$
 
 **Caso 1**
-$$\begin{align}
-f(n) &= O(n^{d-\epsilon}) \quad \exists \epsilon > 0 \\
-& \Rightarrow T(n) = \Theta(n^{d})
+
+$$\begin{align} f(n) &= O(n^{d-\epsilon}) \quad \exists \epsilon > 0 \\
+& \Rightarrow T(n) = \Theta(n^{d}) \\
 \end{align}$$
 
 **Caso 2**
-$$\begin{align}
-f(n) &= O(n^{d}) \\
-& \Rightarrow T(n) = \Theta(n^{d} \log n)
+
+$$\begin{align} f(n) &= O(n^{d}) \\
+& \Rightarrow T(n) = \Theta(n^{d} \log n) \\
 \end{align}$$
 
 **Caso 3**
-$$\begin{align}
-f(n) &= \Omega(n^{d+\epsilon}) \quad \exists \epsilon > 0 \land \exists c >1 \quad t.c. \quad af(\cfrac{n}{b}) \leq cf(n) \\
-& \Rightarrow T(n) = \Theta(f(n))
+
+$$\begin{align} f(n) &= \Omega(n^{d+\epsilon}) \quad \exists \epsilon > 0 \land \exists c >1 \quad t.c. \quad af(\cfrac{n}{b}) \leq cf(n) \\
+& \Rightarrow T(n) = \Theta(f(n)) \\
 \end{align}$$
 
 ### Esempi
@@ -193,13 +190,12 @@ $$T(n)= 9T(\cfrac{n}{3})+n$$
 - $g(n) = n^{2}$
 
 Quindi caso 1, $f(n) = O(n^{d - \epsilon}) \implies T(n) = \Theta(n^{d})$
-$$\begin{align}
-f(n) & = \\
+
+$$\begin{align} f(n) & = \\
 & = O(n^{2- \epsilon}) \\
 & = O(n^{2-1}) \\
 & = O(n) \\
-\\
-&\text{quindi} \quad \epsilon=1
+&\text{quindi} \quad \epsilon=1 \\
 \end{align}$$
 
 Dunque $T(n) = \Theta(n^{2})$
