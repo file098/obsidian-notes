@@ -4,35 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0f99f73dd9c40ea7",
+        "id": "bbeec9c8ee919d3c",
         "type": "tabs",
         "children": [
           {
-            "id": "2435035046010974",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ASD 1/Complessità.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c1152831e7439950",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ASD 1/Strutture dati elementari.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ceaba951879d8412",
+            "id": "de6feef4981ea433",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -43,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -172,17 +148,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "ceaba951879d8412",
+  "active": "de6feef4981ea433",
   "lastOpenFiles": [
-    "ASD 1/Strutture dati elementari.md",
+    "ASD 1/Untitled Diagram 1.svg",
+    "ASD 1/Alberi.md",
+    "ASD 1/Untitled Diagram.svg",
     "ASD 1/Complessità.md",
+    "ASD 1/Albero K-appario.svg",
+    "ASD 1/Strutture dati elementari.md",
     "Basi di Dati 1/Il modello relazionale.md",
     "Basi di Dati 1/Progettazione di un Database.md",
     "ASD 1/Confronto tra algoritmi.md",
-    "ASD 1/Introduzione.md",
-    "18-10-2022.md",
-    "Basi di Dati 1/Introduzione.md",
-    "Pasted image 20220919093733.png",
-    "Pasted image 20220927124402.png"
+    "ASD 1/Introduzione.md"
   ]
 }

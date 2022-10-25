@@ -14,5 +14,6 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "lineWrap": true
+  "lineWrap": true,
+  "alwaysUpdateLinks": true
 }
