@@ -206,3 +206,161 @@ Un asserzione (formula) che deve essere vera prima, dopo ed ad ogni iterazione d
 
 $INV$ = gli elementi da L.head ad x escluso, hanno la chiave diversa da k
 
+2022-10-24
+
+Inizializzazione: all'inizio x=L.head e quindi è vacuamente vera perché non ci sono elementi 
+Conservazione: $INV \land \text{Guardia} \implies INV \left[ \cfrac{\text{x.next}}{x} \right]$ 
+Per ipotesi: 
+1) gli elementi da L.head ad x non compreso hanno chiave diversa da k
+2) `x != NIL && x.key != k`
+
+Devo dimostrare che che è vero: $INV \left[ \cfrac{\text{x.next}}{x} \right]$ cioè gli elementi da L.head ad x.next non compreso hanno chiave diversa da k.
+Per ipotesi 1 gli elementi che L.head e x non compreso hanno chiave diversa e per l'ipotesi 2 `x.key != k` 
+
+Conclusione: $INV \land \text{Guardia} \implies$asserzione finale
+Il ciclo termina per due ragioni:
+1) x == NIL 
+	1) INV mi dice che gli elementi da L.head ad x (NIL) non compreso hanno chiavi diverse da k
+2) `x != NIL && x.key == k`
+	1) mi assicura che k non è presente prima di x e dunque x è la prima occorrenza della chiave k
+
+```python
+def delete(Dizionario L, Chiave k):
+	x = L.head
+	while x != NIL:
+		if.key == k:
+			if x.next != NIL:
+				x.next.prev = x.prev
+			if .prev != NIL:
+				x.prev.next = x.next
+			else: 
+				L.head = x.next
+			temp = x
+			x = x.next
+			rimuovi(temp)
+		else:
+			x = x.next
+```
+
+**Complessità**: $T(n) = \Theta(n)$
+
+## Esercizi
+
+### 1
+
+```python
+def A(int n):
+	s = 0
+	for i to n
+		s = s +B(i)
+	return s
+
+def B(int m):
+	s = 0
+	for j to m:
+		s = s + 1
+	return s
+```
+
+**Complessità B**: $T_{B}(n) = \Theta(m)$ 
+**Complessità A**: $T_{A}(n) = \sum\limits_{i=1}^{n}  \Theta(i) = \sum\limits_{i=1}^{n} ki + d= k * \frac{n(n+1)}{2} +d = \Theta(n^{2})$
+
+Ma è ottima? Per capirlo bisogna vedere qual è il limite inferiore della funzione.
+
+B(m) è la funzione identità, A(n) è la sommatoria dei primi n numeri naturali.
+
+```python
+def A(int n):
+	return n*((n+1)/2)
+```
+**Complessità**: $T(n) = O(1)$ questa è la complessità ottima.
+
+### 2
+
+```python
+def foo(int n):
+	if n <= 2
+		return 1
+	else
+		if n > 321
+			i = n/2
+			return 2 * foo(i) +n * n *n *i
+		else
+			return foo(n-1) + foo(n-2) 
+```
+**Complessità**: $T(n) = T(\frac{n}{2}) + c$
+
+Per il teorema master abbiamo: $\Theta(\log n)$
+
+
+### 3
+
+Nell'ipotesi che $Proc(m) = \Theta(\sqrt{m})$, determina la complessità asintotica della procedura Fun(A,n)
+
+
+```python
+	def Fun(A,n):
+		if n < 1:
+			return 1
+		else:
+			t = Fun(A, n/2)
+			
+			if t > A[n]:
+				t = t + Fun(A,n/2)
+				
+			for j = 1 to n:
+				t = t + A[j] + Proc(n)
+				
+			return t
+```
+
+**Complessità**: $T(n) = T(\frac{n}{2}) + T\left(\frac{n}{2}\right)+ \Theta(n * \sqrt{m}) + c = 2T(\frac{n}{2})+ \Theta(n * \sqrt{m}) + c$
+Posso applicare il master theorem: terzo caso -> $T(n) = \Theta(n \sqrt{n})$
+
+
+### 4
+
+```python 
+	def calcola(int n):
+		if n < 1:
+			return 5
+		else 
+			k = 1
+			for i =1 to n
+				k = k * 2
+			return calcola(n-1) * k
+```
+
+$T(n) = T(n-1) \Theta(n) + d = T(n-1) + cn$
+
+So anche che $T(0) = a$
+
+Metodo dell'albero delle ricorsioni 
+	- $cn$ -> costo a livello più alto delle ricorsione
+	- $T(n-1)$ -> costo dei sottoproblemi
+
+Ogni nodo rappresenta il costo di un singolo sottoproblema ->  sommare i costi all'interno di ogni livello poi sommiamo i costi per il livello per ottenere il costo totale.
+
+$$\begin{align} T(n) & = \\
+& =\sum\limits_{i=1}^{n} ci + T(0) \\
+& = c \sum\limits_{i=1}^{n} i + T(0) \\
+& = c\left(\frac{n(n+1)}{2} + T(0)\right) \\
+& = \Theta(n^{2})\\
+\end{align}$$
+
+### 5
+
+```python
+def compute(int n):
+	if n >= 10:
+		for i = n downto n-3:
+			j = floor(n/2)
+		return compute(floor(n/2)) * compute(floor(n/2)) + 5n
+	# ATTENZIONE, questo codice non verra mai raggiunto per se n>=10 allora si entra prima nel if e mai nel else
+	else:
+		if n >= 20:
+			return compute(n+1)
+		else:
+			return n
+```
+**Complessità**: $T(n) = T\left(\frac{n}{2}\right)+ T\left(\frac{n}{2}\right) = O(\log n)$

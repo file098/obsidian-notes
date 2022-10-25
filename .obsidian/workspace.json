@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c1152831e7439950",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ASD 1/Strutture dati elementari.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ceaba951879d8412",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ASD 1/Alberi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -80,35 +104,6 @@
         "id": "692210917b50b6dc",
         "type": "tabs",
         "children": [
-          {
-            "id": "69eb99f2a4fdce75",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "ASD 1/Complessità.md",
-                "collapseAll": true,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "b350b9c2d8edf7f9",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "ASD 1/Complessità.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
           {
             "id": "8b1f2ac12042f614",
             "type": "leaf",
@@ -126,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASD 1/Complessità.md"
+                "file": "ASD 1/Alberi.md"
               }
             }
           },
@@ -137,29 +132,57 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "69a5c39bd3e91a89",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ASD 1/Alberi.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "28eca4601fe1dfc7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ASD 1/Alberi.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
         ],
         "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 202.5,
-    "collapsed": true
+    "width": 202.5
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "2435035046010974",
+  "active": "ceaba951879d8412",
   "lastOpenFiles": [
-    "ASD 1/Confronto tra algoritmi.md",
     "ASD 1/Strutture dati elementari.md",
-    "ASD 1/Introduzione.md",
     "ASD 1/Complessità.md",
-    "18-10-2022.md",
+    "Basi di Dati 1/Il modello relazionale.md",
     "Basi di Dati 1/Progettazione di un Database.md",
+    "ASD 1/Confronto tra algoritmi.md",
+    "ASD 1/Introduzione.md",
+    "18-10-2022.md",
     "Basi di Dati 1/Introduzione.md",
     "Pasted image 20220919093733.png",
-    "Pasted image 20220927124402.png",
-    "Pasted image 20220927171321.png"
+    "Pasted image 20220927124402.png"
   ]
 }

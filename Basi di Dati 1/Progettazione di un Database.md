@@ -95,4 +95,13 @@ Un associazione è caratterizzata dalle seguenti proprietà strutturali:
 - molteplicità (o cardinalità)
 - totalità
 
+### Progettazione concettuale di schemi
 
+- identificare le classi
+- identificare le associazioni e le loro proprietà strutturali
+- identificare gli attributi delle classi e associazioni e i loro tipi
+- individuare le sottoclassi
+- individuare le generalizzazioni 
+- vincoli di integrità (chiavi, not null, ...)
+
+000000000000000000000000000000
