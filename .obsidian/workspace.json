@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basi di Dati 1/Il modello relazionale.md",
-                "mode": "preview",
+                "file": "Basi di Dati 1/Algebra relazionale.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basi di Dati 1/Il modello relazionale.md"
+                "file": "Basi di Dati 1/Algebra relazionale.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basi di Dati 1/Il modello relazionale.md",
+                "file": "Basi di Dati 1/Algebra relazionale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basi di Dati 1/Il modello relazionale.md",
+                "file": "Basi di Dati 1/Algebra relazionale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "99361a862013f3c3",
+  "active": "6e131f9b1a07c127",
   "lastOpenFiles": [
     "ASD 1/Alberi.md",
     "ASD 1/Untitled Diagram 1.svg",
@@ -157,7 +157,7 @@
     "ASD 1/Complessità.md",
     "ASD 1/Albero K-appario.svg",
     "ASD 1/Strutture dati elementari.md",
-    "Basi di Dati 1/Il modello relazionale.md",
+    "Basi di Dati 1/Algebra relazionale.md",
     "Basi di Dati 1/Progettazione di un Database.md",
     "ASD 1/Confronto tra algoritmi.md",
     "ASD 1/Introduzione.md"
