@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASD 1/Alberi.md",
+                "file": "Basi di Dati 1/Il modello relazionale.md",
                 "mode": "preview",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -96,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASD 1/Alberi.md"
+                "file": "Basi di Dati 1/Il modello relazionale.md"
               }
             }
           },
@@ -114,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASD 1/Alberi.md",
+                "file": "Basi di Dati 1/Il modello relazionale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASD 1/Alberi.md",
+                "file": "Basi di Dati 1/Il modello relazionale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,12 +143,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 202.5,
+    "collapsed": true
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "6e131f9b1a07c127",
+  "active": "99361a862013f3c3",
   "lastOpenFiles": [
     "ASD 1/Alberi.md",
     "ASD 1/Untitled Diagram 1.svg",
