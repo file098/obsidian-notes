@@ -12,10 +12,12 @@ Un nodo **u** può avere zero o più figli v tali che abbiamo un arco (u,v) \in 
 - Un nodo non foglia è un ==nodo interno==. 
 - Se due nodi hanno lo stesso padre sono ==fratelli==
 
-Il **cammino** da un nodo u a un nodo v in un albero T è una **sequenza** di nodi $<n_0, n_1, ... , n_k>$ tale che:
+Il **cammino** da un nodo u a un nodo v in un albero T è una **sequenza** di nodi $< n_{0}, n_{1}, ... , n_{k} >$ tale che:
+
 - $u_{1} = n_0$
 - $u = n_k$
-- $<n_{i-1}, n_i> \in A$ per ogni $i=1,...,k$
+- $< n_{i-1}, n_{i} > \in A$ per ogni $i=1,...,k$
+
 La **lunghezza** di un cammino è il numero degli arch nel cammino $\emptyset$ al $n^0$ di nodi che formano il cammino-1.
 
  > N.B.

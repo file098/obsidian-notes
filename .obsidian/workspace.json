@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "ASD 1/Alberi.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -137,7 +138,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
