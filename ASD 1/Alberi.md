@@ -125,3 +125,139 @@ P.length contiene il numero di nodi dell'albero
 	return l
 ```
 
+2022-11-07
+
+#### Vettore posizionale
+
+Alberi k-ario completo con k>=2
+Ogni nodo ha una posizione prestabilita sulla struttura 
+Sia T = (N,A) un albero k-ario completo
+P è un vettore di dimensione n tale che
+P[v] contiene l'informazione associata al nodo v
+O è la posizione della radice
+i-esimo figlio di v è in posizione $k*v+1+i$ dove $i \in \{0,...,k-1\}$
+padre del nodo f è in posizione $(f \neq 0)$ 
+
+$$\begin{align}
+& k*v+1 \leq f \leq kv+1+k-1 \\
+& k*v \leq f-1 \leq kv+k-1 \\
+& v \leq \frac{f-1}{k} \leq v+ \frac{k-1}{k} < v+1 \\
+& v = \frac{f-1}{k}
+\end{align}$$
+
+Lo spazio per un albero con n elementi è $\Theta(n)$.
+P.length può contenere il numero di nodi
+P.k grado dei nodi
+
+```python
+def padre(Tree P, Node v):
+	if v==0
+		return NIL
+	else
+		return floor((v-1)/P.k)
+```
+
+Complessità: $T(n) = \Theta(1)$
+
+```python
+def figli(Tree P, Node v):
+	l = creaLista()
+	if v*P.k + 1 >= P.length:
+		return l
+	else:
+		for i=0 to P.k-1:
+			inserisci P.k*v+1+i in l
+		return l
+```
+
+Complessità: $T(n) = O(k)$
+
+
+### Rappresentazione basata su strutture collegate
+
+
+**Dati**: ogni nodo è rappresentato attraverso un record che contiene l'informazione associata al nodo, contiene un puntatore al padre e altri puntatori per accedere ai figli.
+
+#### Puntatore ai figli
+
+Se ogni nodo ha grado k al più k, possiamo mantenere in ogni nodo un puntatore a ciascuno dei possibili k figli.
+
+Un nodo x ha:
+- x.p puntatore al padre
+- x.left puntatore al figlio sinistro
+- x.right puntatore al figlio destro
+- x.key informazione del nodo
+
+![[Albero Puntatori.svg]]
+
+T.root punta alla radice
+Lo spazio richiesto è $\Theta(n*k)$ e se k è costante $\Theta(n)$.
+
+```python
+def figli(Tree P, Node v):
+	l = creaLista()
+	if v.left != NIL:
+		insersci v.left in l
+	if v.right != NIL:
+		insersci v.right in l
+	return l
+```
+
+**Se k è limitato da una grande costante ma la maggior parte dei figlio sono NIL c'è uno spreco di memoria.**
+
+Lista figli: Se il numero di figli non è noto a priori allora è possibile associare a ciascun nodo la lista dei puntatori ai suoi figli
+
+![[Lista dei figli.svg]]
+
+
+#### Figlio Sinistro - Fratello Destro
+
+**Dati**: Ogni nodo x ha le seguenti informazioni:
+- x.key contiene l'informazione
+- x.p puntatore al padre
+- x.left_child puntatore al figlio più a sinistra del nodo
+- x.right_sibling puntatore al nodo immediatamente alla sua destra
+
+Se il nodo x ha x.left_child == NIL è un nodo foglia
+Se il nodo x è il figlio più a destra di suo padre allora x.right_sib == NIL
+
+![[Filgi,Fratelli.svg]]
+
+```python
+def padre(Tree T, Node v):
+	return v.p
+```
+
+```python
+def figli(Tree T, Node v):
+	l = creaLista()
+	iter = v.left_child
+	while iter != NIL:
+		inserisci iter in l
+		iter = iter.right_sib
+	return l
+```
+
+**Complessità**: $T(n) = \Theta(grado(v))$
+
+# Algoritmi su alberi
+
+## Visite di alberi
+
+### Visita generica
+
+```python
+def visitaGenerica(Node r):
+	S = {r}
+	while S != {} :
+		estrai un nodo da S
+		visita il nodo u
+		S = S unito {figli di u}
+```
+
+**Teorema**: l'algoritmo di visita applicato alla radice di un albero con n nodi termina in $O(n)$ iterazioni e lo spazio usato è $O(n)$.
+
+DIM: inserimento/cancellazione da S sono eseguite in O(n)
+
+Ogni nodo verrà inserito ed estratto da S ==una sola volta== perché un albero non si può tornare ad un nodo a partire dai suoi figli. 
+
