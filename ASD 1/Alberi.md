@@ -61,19 +61,19 @@ Un albero k-ario **completo** è un albero k-ario in cui tutte le foglie hanno l
 
 Esercizio. Trovare il numero di nodi interni di un albero k-ario completo la cui altezza risulta essere k.
 
-Dimostriamo per induzione sull'altezza h dell'albero $\#foglie(h) = k^h$
+Dimostriamo per induzione sull'altezza h dell'albero $foglie(h) = k^h$
 
 **Caso base**: h=0
 
 L'albero è costituito dalla radice 
 
-$k^0 = 1$ ha un'unica foglia che è la radice, vero perché assumiamo che per un albero di altezza h sia vero che $\# foglie(h) = k^{h}$ e dimostriamo che $\# foglie(h+1) = k^{h+1}$ per alberi di altezza h+1.
+$k^0 = 1$ ha un'unica foglia che è la radice, vero perché assumiamo che per un albero di altezza h sia vero che $foglie(h) = k^{h}$ e dimostriamo che $foglie(h+1) = k^{h+1}$ per alberi di altezza h+1.
 
 Il numero di nodi di profondità h sono $k^h$ per l'ipotesi induttiva in quanto l'albero di altezza h è un albero completo.
 
 **Ognuno dei nodi di livello h quanti figli ha?** Ha k figli perché l'albero è completo, dunque 
 $$k^h * k = k^{h+1}$$
-Quindi $\# foglie(h+1) = k^{h+1}$.
+Quindi $foglie(h+1) = k^{h+1}$.
 
 Per calcolare in numero di nodi interni
 
