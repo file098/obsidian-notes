@@ -47,7 +47,7 @@ Gli albero binari sono definiti in modo ricorsivo.
 - un albero costituito da un nodo radice da un albero binario detto sottoalbero sinistro della radice e da un albero binario detto sottoalbero destro è una albero binario. 
 
 
-![[Albero K-appario.svg]]
+![[./Albero K-appario.svg]]
 
 
 
@@ -57,7 +57,7 @@ Un ==albero k-ario== è un albero in cui i figli di un nodo sono etichettati con
 Un albero binario è un albero k-ario con k=2 
 Un albero k-ario **completo** è un albero k-ario in cui tutte le foglie hanno la stessa profondità e tutti i nodi interni hanno grado k.
 
-![[ASD 1/Untitled Diagram.svg]]
+![[Untitled Diagram.svg]]
 
 Esercizio. Trovare il numero di nodi interni di un albero k-ario completo la cui altezza risulta essere k.
 
@@ -98,7 +98,7 @@ Operazioni:
 
 Sia T=(N,A) un albero con n nodi numerati da 0 a n-1
 
-![[ASD 1/Untitled Diagram 1.svg]]
+![[./Untitled Diagram 1.svg]]
 
 P: vettore d di dimensione r le cui celle sono coppie (info,parent)%%da rivedere%%
 
