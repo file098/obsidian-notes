@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basi di Dati 1/Algebra relazionale.md",
-                "mode": "source",
+                "file": "ASD 1/Alberi.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -38,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTimeReverse"
+                "sortOrder": "byCreatedTime"
               }
             }
           },
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -97,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basi di Dati 1/Algebra relazionale.md"
+                "file": "ASD 1/Alberi.md"
               }
             }
           },
@@ -115,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basi di Dati 1/Algebra relazionale.md",
+                "file": "ASD 1/Alberi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,31 +131,28 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basi di Dati 1/Algebra relazionale.md",
+                "file": "ASD 1/Alberi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 202.5,
+    "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "99361a862013f3c3",
+  "active": "6e131f9b1a07c127",
   "lastOpenFiles": [
+    "ASD 1/Albero K-appario.svg",
     "ASD 1/Alberi.md",
     "ASD 1/Untitled Diagram 1.svg",
     "ASD 1/Untitled Diagram.svg",
-    "ASD 1/Complessità.md",
-    "ASD 1/Albero K-appario.svg",
-    "ASD 1/Strutture dati elementari.md",
     "Basi di Dati 1/Algebra relazionale.md",
+    "ASD 1/Complessità.md",
+    "ASD 1/Strutture dati elementari.md",
     "Basi di Dati 1/Progettazione di un Database.md",
     "ASD 1/Confronto tra algoritmi.md",
     "ASD 1/Introduzione.md"
