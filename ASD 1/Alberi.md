@@ -276,3 +276,54 @@ def dfs(Node r):
 
 DIM
 
+VAI A VEDERE DFS NEGLI APPUNTI DI COSTA
+
+## Esercizi
+
+Un nodo di un albero binario è detto centrale se il numero di foglie del sottoalbero di cui è radice, è pari alla somma delle chiavi dei nodi appartenenti al cammino dalla radice al nodo stesso.
+
+Scrivere un algoritmo efficiente che restituisce il numero di nodi centrali. Discutere la complessità e se volessimo modificare l'algoritmo in modo che restituisca l'insieme dei nodi centrali.
+
+
+```C++
+struct Node {
+	int key;
+	Node *left;
+	Node *right;
+	Node *p;
+	Node(int k, Node *padre, Node *sx=nullptr, Node *rx=nullptr)
+	:key{k},p{padre},left{sx},right{dx}{}
+}
+
+typedef Node *PNode;
+
+int contaCentrali(Pnode u){
+	int numF;
+	return contaCentraliAux(u, 0, numF)
+}
+
+int contaCentraliAux(PNode u, int sum, int &numF){
+	int nodi_c, nodisx, nodidx, numFSx, numFDx;
+	if(u == nullptr){
+		numF = 0;
+		return 0;
+	}
+	if(u->left==nullptr && u->right==nullptr){
+		numF = 1;
+		return 0;
+	}
+	else {
+		nodi_sx = contaCentraliAux(u->left, sum+u->key, numF, numFSx);
+		nodi_dx = contaCentraliAux(u->right, sum+u->key, numF, numFDx);
+		numF = numFSx + numFDx;
+		nodi_c = nodisx + nodidx;
+	}
+	if(numF == sum+u->key){
+		return nodi_c+1;
+	}
+	else {
+		return nodi_c;
+	}
+}
+
+```
