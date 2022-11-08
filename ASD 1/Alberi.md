@@ -260,4 +260,15 @@ def visitaGenerica(Node r):
 DIM: inserimento/cancellazione da S sono eseguite in O(n)
 
 Ogni nodo verrà inserito ed estratto da S ==una sola volta== perché un albero non si può tornare ad un nodo a partire dai suoi figli. 
+Quindi le iterazioni del nostro ciclo while saranno al più $O(n)$ e poiché ogni nodo compare al più una volta in S, lo spazio richiesto è $O(n)$
+
+### Depth First Search (DFS)
+
+```python
+def dfs(Node r):
+	if r != NIL
+		visita il nodo r
+		dfs(r.left)
+		dfs(r.right)
+```
 

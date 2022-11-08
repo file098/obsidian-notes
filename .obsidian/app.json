@@ -1,6 +1,6 @@
 {
   "promptDelete": false,
-  "defaultViewMode": "preview",
+  "defaultViewMode": "source",
   "showFrontmatter": true,
   "spellcheckLanguages": [
     "en-US",
@@ -15,5 +15,6 @@
     "downscalePercent": 100
   },
   "lineWrap": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "tabSize": 2
 }
