@@ -272,3 +272,7 @@ def dfs(Node r):
 		dfs(r.right)
 ```
 
+**Teorema**: Se x è la radice di un sottoalbero di n nodi, la chiamata di dfs(r), richiede tempo $\Theta(n)$. 
+
+DIM
+
