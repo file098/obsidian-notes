@@ -1,4 +1,4 @@
-2022-10-19
+%%2022-10-19%%
 
 # Linguaggi Relazionali
 
@@ -83,3 +83,41 @@ Sia $R(YX)$ e $S(ZX)$ con $X$ attributi comuni, $R \bowtie S$ restituisce una re
 
 $$t \in R \bowtie S \iff t[YX] \in R \quad e \quad t[ZX] \in S$$
 
+
+%%2022-11-09%%
+
+Voglio l'insime degli studenti con i loro esami, inclusi gli studenti che non hanno sostenuto esami.
+
+$$Studenti \bowtie_{Matricola = Candidato}^{\leftarrow} Esami$$
+
+### Divisione
+
+Divisione: date le relazioni R(XY) e S(Y) si vuole produrre una relazione T(X) tale  
+che una ennupla t è in T se e solo se per ogni s in S la ennupla <t, s> appare in R.
+
+$$R \div S$$
+
+Esempio: matricola degli studenti che hanno fatto tutti gli esami che ha fatto Anna  
+Rossi (matr. 76366).
+
+esami di Anna Rossi:
+
+$$ES\_AR= \pi_{Materia}(\phi_{Candidato=76366}(Esami))$$
+esami studenti con matricola
+$$ES = \pi_{Candidato,Materia}(Esami)$$
+
+Questa divisione è applicabile se $ES \div ES\_{AR} \quad ES_{AR}\neq \emptyset$
+
+Quindi
+
+$$R \div S = \{ t | t \in \Pi_{x} (R) \land \forall x \in S < t,s > \in R \}$$
+sui numeri 
+
+$$r \div s = max\{t | t*s \leq r \} \iff $$
+Quindi possiamo dire che la divisione è equivalente a:
+$$R \div S \equiv \Pi_{x}(R) - (\Pi_{x}(R)_{X}S- R)$$
+
+#### Esercizio  
+Query per  
+- studenti che hanno fatto un sottoinsieme degli esami di Anna Rossi  
+	- $AL\_PIU= \Pi_{Matricola}(Studenti) - p(\Pi_{Candidato}( ES - \Pi_{Candidati}(ES) \times ES\_AR)))$
