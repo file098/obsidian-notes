@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basi di Dati 1/Algebra relazionale.md",
+                "file": "ASD 1/Strutture dati elementari.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5086555480957,
-    "collapsed": true
+    "width": 255.5086555480957
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -97,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basi di Dati 1/Algebra relazionale.md"
+                "file": "ASD 1/Strutture dati elementari.md"
               }
             }
           },
@@ -115,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basi di Dati 1/Algebra relazionale.md",
+                "file": "ASD 1/Strutture dati elementari.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basi di Dati 1/Algebra relazionale.md",
+                "file": "ASD 1/Strutture dati elementari.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }

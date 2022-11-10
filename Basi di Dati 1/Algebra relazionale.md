@@ -121,3 +121,30 @@ $$R \div S \equiv \Pi_{x}(R) - (\Pi_{x}(R)_{X}S- R)$$
 Query per  
 - studenti che hanno fatto un sottoinsieme degli esami di Anna Rossi  
 	- $AL\_PIU= \Pi_{Matricola}(Studenti) - p(\Pi_{Candidato}( ES - \Pi_{Candidati}(ES) \times ES\_AR)))$
+
+%%2022-11-10%%
+
+#### Query sulla biblioteca
+
+![[Pasted image 20221110150235.png]]
+
+
+Codice degli utenti che hanno in prestito solo libri di fisica (si legga libro di fisica come documento la cui descrizione bibliografica è indicizzata da un termine che ha come standard “Fisica”). Si vuole una copia per ciascuna descrizione bibliografica.
+
+$$LibriFisica(LF) = \Pi_{Codice Descrizione}(Documenti \bowtie_{CodDesc = Codice} DescrizioniBib \bowtie_{} Indicizza \bowtie\phi_{Student = Fisica}(Termini))$$
+
+$$LibriPrestitoUtente(UL) = \Pi_{CodUtente,CodDesc}(Prestiti \bowtie Documenti)$$
+$$SoloFisica = \Pi_{Codice}(Utenti) - \Pi(UL - \Pi_{CodUtente}(UL) \times LF)$$
+
+
+Codice degli utenti che hanno in prestito tutti i libri di fisica. Si vuole una copia per ciascuna descrizione bibliografica.
+
+$$TuttoFisica = UL \div LF \quad se \quad LF \neq \emptyset$$
+Codice degli utenti che hanno in prestito tutti e soli i libri di fisica. Si vuole una copia per ciascuna descrizione bibliografica.
+
+$$TuttoFisica \cap SoloFisica$$
+
+Nome, Cognome e Codice degli utenti che hanno in prestito più di tre libri.
+
+$$NumeroPrestiti = Codice,Nome,Cognome \quad \gamma \quad count(*) \quad (Prestiti \bowtie Utenti)_{CodUtente = Codice}$$
+
