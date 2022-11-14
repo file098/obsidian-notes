@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASD 1/Strutture dati elementari.md",
+                "file": "ASD 1/Complessità.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASD 1/Strutture dati elementari.md"
+                "file": "ASD 1/Complessità.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASD 1/Strutture dati elementari.md",
+                "file": "ASD 1/Complessità.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASD 1/Strutture dati elementari.md",
+                "file": "ASD 1/Complessità.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,20 +142,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5,
-    "collapsed": true
+    "width": 202.5
   },
   "active": "9f12d54dd0da5fcc",
   "lastOpenFiles": [
+    "ASD 1/Confronto tra algoritmi.md",
+    "Calcolo 1/Lezione 1.md",
+    "ASD 1/Complessità.md",
+    "ASD 1/Introduzione.md",
+    "ASD 1/Strutture dati elementari.md",
     "Basi di Dati 1/Algebra relazionale.md",
     "ASD 1/Alberi.md",
     "ASD 1/Filgi,Fratelli.svg",
     "ASD 1/Lista dei figli.svg",
-    "ASD 1/Albero K-appario.svg",
-    "ASD 1/Untitled Diagram.svg",
-    "ASD 1/Untitled Diagram 1.svg",
-    "ASD 1/Albero Puntatori.svg",
-    "ASD 1/Complessità.md",
-    "ASD 1/Strutture dati elementari.md"
+    "ASD 1/Albero K-appario.svg"
   ]
 }
