@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASD 1/Complessità.md",
+                "file": "ASD 1/Alberi.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASD 1/Complessità.md"
+                "file": "ASD 1/Alberi.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASD 1/Complessità.md",
+                "file": "ASD 1/Alberi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASD 1/Complessità.md",
+                "file": "ASD 1/Alberi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,9 +146,9 @@
   },
   "active": "9f12d54dd0da5fcc",
   "lastOpenFiles": [
+    "ASD 1/Complessità.md",
     "ASD 1/Confronto tra algoritmi.md",
     "Calcolo 1/Lezione 1.md",
-    "ASD 1/Complessità.md",
     "ASD 1/Introduzione.md",
     "ASD 1/Strutture dati elementari.md",
     "Basi di Dati 1/Algebra relazionale.md",
