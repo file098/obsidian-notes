@@ -327,3 +327,59 @@ int contaCentraliAux(PNode u, int sum, int &numF){
 }
 ```
 
+2022-11-14
+
+Un cammino è detto **terminabile** se $x_n.left = NIL$ oppure $x_n.right = NIL$. Diciamo perciò che un albero è **3-bilanciato** se tutti i cammini terminabili che partono dalla radice hanno lunghezze che differiscono al più di tre.
+
+Scrivere un algoritmo efficiente che verifica se un albero è 3-bilanciato
+
+```C#
+
+bool 3_Bil(PNode u){
+	int min, max;
+	3_bil_aux(u, min, max);
+	return (max - min <= 3); 
+}
+
+int 3_bil_aux(PNode u,int &min,int &max){
+	int minsx, maxsx, mindx, maxdx, ;
+	if(u == nullptr){
+		min = -1;
+		max = -1;
+		return -1;
+	}
+	else {
+		3_bil_aux(u->left, minsx, maxsx);
+		3_bil_aux(u->right, mindx, maxdx);
+		min = (minsx <= mindx ? minsx : mindx) + 1;
+		max = (maxsx <= maxdx ? maxsx : maxdx) + 1
+	}
+}
+```
+
+**Complessità**:$T(n) = \Theta(n)$
+
+Sia T un albero binario. Progettare un algoritmo che preso in ingresso la radice di un albero e un intero k, che stampi le chiavi contenute nei nodi di T al livello k, procedendo da sinistra verso destra. 
+
+```C#
+void stampaLivello(PNode u, int k){
+	if(u !== nullptr){
+		if(k == 0){
+			count << u->key
+		}
+		else {
+			stampaLivello(u->left, k-1);
+			stampaLivello(u->right, k-1);
+		}
+	}
+}
+```
+
+**Complessità in funzione di k**: 
+$$\begin{align}
+T(k) = 
+\begin{cases}
+ c & k =0 \\
+ \cfrac{T(k-1)+ T(k-1) +d}{2T(k-1) + d} & k>0
+\end{cases}
+\end{align}$$
