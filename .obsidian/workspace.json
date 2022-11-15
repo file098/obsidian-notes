@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "76b2ce724def7835",
+        "id": "07a2defc21d68ce6",
         "type": "tabs",
         "children": [
           {
-            "id": "9f12d54dd0da5fcc",
+            "id": "aa000284a73748d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -143,20 +143,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5,
-    "collapsed": true
+    "width": 202.5
   },
-  "active": "9f12d54dd0da5fcc",
+  "active": "519944d4dc483bbc",
   "lastOpenFiles": [
+    "ASD 1/Albero di ricerca.svg",
+    "ASD 1/Alberi.md",
     "ASD 1/Complessità.md",
     "ASD 1/Confronto tra algoritmi.md",
     "Calcolo 1/Lezione 1.md",
     "ASD 1/Introduzione.md",
     "ASD 1/Strutture dati elementari.md",
     "Basi di Dati 1/Algebra relazionale.md",
-    "ASD 1/Alberi.md",
     "ASD 1/Filgi,Fratelli.svg",
-    "ASD 1/Lista dei figli.svg",
-    "ASD 1/Albero K-appario.svg"
+    "ASD 1/Lista dei figli.svg"
   ]
 }

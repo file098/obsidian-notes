@@ -333,7 +333,7 @@ Un cammino è detto **terminabile** se $x_n.left = NIL$ oppure $x_n.right = NIL$
 
 Scrivere un algoritmo efficiente che verifica se un albero è 3-bilanciato
 
-```C#
+```C++
 
 bool 3_Bil(PNode u){
 	int min, max;
@@ -361,7 +361,7 @@ int 3_bil_aux(PNode u,int &min,int &max){
 
 Sia T un albero binario. Progettare un algoritmo che preso in ingresso la radice di un albero e un intero k, che stampi le chiavi contenute nei nodi di T al livello k, procedendo da sinistra verso destra. 
 
-```C#
+```C++
 void stampaLivello(PNode u, int k){
 	if(u !== nullptr){
 		if(k == 0){
@@ -432,3 +432,145 @@ int auxcolore(Node u, int *numB, int *numN){
 	}
 }
 ```
+
+2022-11-15
+
+### Albero binario bilanciato
+
+Un albero viene detto binario bilanciato se la sua altezza è $h=O(\log n)$ dove n è il numero di nodi.
+Albero completo -> albero bilanciato
+Albero bilanciato -/> albero completo
+
+### Albero binario di ricerca
+
+Un albero binario di ricerca è un albero binario che soddisfa la seguente proprietà:
+> **Proprietà di ricerca**
+>  sia x un nodo in un albero binario di ricerca. Se y è un nodo nel sottoalbero sinistro di x, allora $y.key \leq x.key$ e se y è invece un nodo nel sottoalbero destro di x allora $y.key \geq x.key$
+
+![[Albero di ricerca.svg]]
+
+Questa proprietà ci permette di elencare in ordine **non decrescente** le chiavi di un albero binario di ricerca visitando l'albero in ordine simmetrico. 
+
+```C 
+Node Tree_search(Node x, Elem k){
+	// Restituisce un nodo con chiave k, se esiste, oppure NIL
+	if (x == null || x->key == k){
+		return x;
+	}
+	else {
+		if(x.key > k){
+			tree_search(x->left, k);
+		}
+		else {
+			tree_search(x->right, k);
+		}
+	}
+}
+```
+
+**Correttezza**: possiamo tagliare lo spazio di ricerca perciò le proprietà degli alberi binari di ricerca assicurano che nel sottoalbero destro non ci sono nodi con chiavi minori di x.key. In maniera analoga si taglia il sottoalbero sinistro perché la proprietà assicura che non ci sono nodi con chiavi minori di x.key in tale albero. 
+
+**Complessità**: I nodi incontrati durante la ricorsione formano un cammino verso il basso dalla radice del mio albero, quindi il mio tempo di esecuzione è $O(h)$ dove $h$ è l'altezza del mio albero. 
+- Se l'albero è bilanciato allora $O(\log n)$
+- Se l'albero è fortemente sbilanciato allora $O(n)$
+
+```C
+// pre: x è un nodo del mio albero T
+Node TreeMax(Node x){
+// post: mi restituisce il nodo con chiave massima nel sottoalbero radicato in x
+	while(x->right != null){
+		x = x->right
+	}
+	return x;
+}
+
+// pre: x è un nodo del mio albero T
+Node TreeMin(Node x){
+// post: mi restituisce il nodo con chiave minima nel sottoalbero radicato in x
+	while(x->left != null){
+		x = x->left
+	}
+	return x;
+}
+```
+
+**Complessità**: $T(n) = O(h)$
+
+```C
+Iterative_Tree_Search(Node x, Elem k){
+	while (x != null && x.key != k){
+		if(k < x.key){
+			x = x->left;
+		}
+		else {
+			x = x->right;
+		}
+	}
+	return x;
+}
+```
+
+
+#### Predecessore e Successore
+
+Dato un albero binario di ricerca voglio determinare dato un nodo il suo predecessore e il suo successore nell'ordine stabilito in una lista simmetrica. Se tutte le chiavi sono distinte, il successore di un nodo x non è altro che il nodo con la più piccola chiave che è maggiore di x.key.
+
+Distinguiamo due casi:
+- x ha un figlio destro: succ(x) è il minimo del sottoalbero destro di x
+- x non ha un figlio destro: succ(x) se esiste, è l'antenato più prossimo di x il cui figlio sinistro è anche antenato di x. Per trovarlo si risale da x verso la radice fino ad incontrare la prima svolta a destra
+
+Se x è il massimo restituisce NIL
+
+
+```C
+// pre: x è un nodo dell'albero T
+Node tree_successor(Node x){
+	if(x->right != null){
+		return tree_minimum(x->right); // O(h)
+	}
+	else {
+		y = x.p;
+		while (y != null && x == y.right){ // O(h)
+			x = y;
+			y = y.p;
+		}	
+		return y;
+	}
+}
+```
+
+**Complessità**: $T(n) = O(h)$ perché si segue un cammino che scende o che sale ma siamo sempre in una situazione di seguire un cammino. 
+
+#### Inserimento
+
+```C
+// T.root contiene il nodo radice
+void insert(Tree T, Node z){
+	// post: inserisce z in T mantenendo la proprietà di ricerca
+	y = null; // padre di x
+	x = T.root;
+	while(x != null){
+		y = x;
+		if(z.key < x.key){
+			x = x->left;
+		}
+		else {
+			x = x->right;
+		}
+	}
+	z.p = y;
+	
+	if(y == null){
+		T.root = z;
+	}
+	else {
+		if(z.key < y.key){
+			y.left = z;
+		}
+		else {
+			y.right = z;
+		}
+	}
+} 
+```
+**Complessità**: $T(n) = O(h)$ perché si segue un cammino dalla radice verso il basso. 
