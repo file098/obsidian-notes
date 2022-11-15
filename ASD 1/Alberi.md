@@ -385,3 +385,50 @@ T(k) =
 \end{align}$$
 
 Dato un albero binario con i nodi bianchi e neri, scrivere una funzione efficiente che calcoli il numero di nodi aventi lo stesso numero di discendenti bianchi e neri (nodo stesso è discendente di se stesso)
+
+```C
+typedef struct Node {
+	struct node* left;
+	struct node* right;
+	char* colore;
+} *Node;
+
+
+int nodiBN(PNode u){
+	int bianco, nero;
+	return auxcolore(u, &bianco, &nero);
+}
+
+int auxcolore(Node u, int *numB, int *numN){
+	int risSx, risDx, numBSx, numBDx, numNSx, numNDx;
+	// Caso base: il caso in cui il nodo è vuoto
+	if(u == NULL){
+		*numN = 0; 
+		*numB = 0;
+		return 0;
+	}
+	else {
+		
+		rissx = auxcolore(u->left, &numBSx, &numNSx);
+		risdx = auxcolore(u->right, &numBDx, &numNDx);
+		// scorro l'albero fino alla foglia e rissx e risdx messi a 0
+		// una volta arrivato alla foglia viene eseguito il resto del codice 
+		*numB = numBSx + numBDx;
+		*numN = numNSx + numNDx;
+	}
+
+	if(strcmp(u->colore, "bianco") == 0)){
+		(*numB)++;
+	}
+	else {
+		(*numN)++;
+	}
+	// controllo se i discendenti hanno il numero di B e N uguali e ritorno quanti nodi lo hanno
+	if(*numB == *numN){
+		return risSx + risDx + 1;
+	}
+	else {
+		return risSx + risDx;
+	}
+}
+```
