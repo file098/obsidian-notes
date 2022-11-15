@@ -383,3 +383,5 @@ T(k) =
  \cfrac{T(k-1)+ T(k-1) +d}{2T(k-1) + d} & k>0
 \end{cases}
 \end{align}$$
+
+Dato un albero binario con i nodi bianchi e neri, scrivere una funzione efficiente che calcoli il numero di nodi aventi lo stesso numero di discendenti bianchi e neri (nodo stesso è discendente di se stesso)
