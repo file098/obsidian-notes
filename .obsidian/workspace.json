@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASD 1/Alberi.md",
+                "file": "Basi di Dati 1/Algebra relazionale.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASD 1/Alberi.md"
+                "file": "Basi di Dati 1/Algebra relazionale.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASD 1/Alberi.md",
+                "file": "Basi di Dati 1/Algebra relazionale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASD 1/Alberi.md",
+                "file": "Basi di Dati 1/Algebra relazionale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,19 +143,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 202.5,
+    "collapsed": true
   },
-  "active": "519944d4dc483bbc",
+  "active": "aa000284a73748d9",
   "lastOpenFiles": [
-    "ASD 1/Albero di ricerca.svg",
+    "Basi di Dati 1/Introduzione.md",
     "ASD 1/Alberi.md",
+    "ASD 1/Albero di ricerca.svg",
     "ASD 1/Complessità.md",
     "ASD 1/Confronto tra algoritmi.md",
     "Calcolo 1/Lezione 1.md",
     "ASD 1/Introduzione.md",
     "ASD 1/Strutture dati elementari.md",
     "Basi di Dati 1/Algebra relazionale.md",
-    "ASD 1/Filgi,Fratelli.svg",
-    "ASD 1/Lista dei figli.svg"
+    "ASD 1/Filgi,Fratelli.svg"
   ]
 }

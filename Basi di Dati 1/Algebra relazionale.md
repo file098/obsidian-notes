@@ -148,3 +148,27 @@ Nome, Cognome e Codice degli utenti che hanno in prestito più di tre libri.
 
 $$NumeroPrestiti = Codice,Nome,Cognome \quad \gamma \quad count(*) \quad (Prestiti \bowtie Utenti)_{CodUtente = Codice}$$
 
+%%2022-11-16%%
+
+Codice, Nome e Cognome degli autori che hanno scritto il massimo numero di libri.
+
+
+
+Lavora_A(Imp, Progetto,OreSettimana)
+Gli impiegati che lavorano di 5 ore su un certo progetto
+
+Calcolo relazionale su domini
+$\{ Imp: i | Lavora_A(Imp: i, Progetto: p, OreSettimana:o ) \}$
+
+Calcolo relazionale su ennuple
+$\{t.Imp | t \in Lavora_A \land t.OreSettimana \}$
+
+Calcolo relazioni sui domini
+$\{A_1:x_1, ..., A_n:x_n | \emptyset (x_2, ..., x_{k)}\}$
+
+- $A_1,...A_k$ sono attributi distinti 
+- $x_1,..., x_k$ sono variabili e valori nei corrisposti domini
+- $\emptyset(x_1, ...x_k)$ è una formula logica
+- $A_1:x_1, ..., A_k:x_k$ è detta **target list** definisci le strutture del risultato
+
+Il risultato è una relazione con tipo {(A_1:T_1, ..., A_k:T_k)} che contiene le ennuple i cui valori so
