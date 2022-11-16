@@ -172,3 +172,27 @@ $\{A_1:x_1, ..., A_n:x_n | \emptyset (x_2, ..., x_{k)}\}$
 - $A_1:x_1, ..., A_k:x_k$ è detta **target list** definisci le strutture del risultato
 
 Il risultato è una relazione con tipo {(A_1:T_1, ..., A_k:T_k)} che contiene le ennuple i cui valori so
+
+Formule atomiche
+
+Le formule atomiche possono essere:
+
+- formula di tipo
+	- $t \in Studenti$
+- formule di confronto fra valori di attributi
+	- $t.Matricola = e.Candidato$
+- formule di confronto fra valore di un attributo e un valore costante
+	- $t.Provincia = 'VE'$
+
+
+![[Pasted image 20221116163708.png]]
+
+![[Pasted image 20221116163717.png]]
+
+$$R(A,B) \qquad S(C,D)$$
+$$R \bowtie_{B=C} S$$
+giunzione
+$$\{ r,s | r \in \mathbb{R} \land s \in S \land r.B = s.C \}$$
+giunzione naturale
+
+$$R \bowtie S \{  \}$$
