@@ -1,4 +1,4 @@
-
+f
 2022-10-25
 
 # Alberi radicati
@@ -47,7 +47,7 @@ Gli albero binari sono definiti in modo ricorsivo.
 - un albero costituito da un nodo radice da un albero binario detto sottoalbero sinistro della radice e da un albero binario detto sottoalbero destro è una albero binario. 
 
 
-![[./Albero K-appario.svg]]
+![[Albero K-appario.svg]]
 
 
 
@@ -57,7 +57,7 @@ Un ==albero k-ario== è un albero in cui i figli di un nodo sono etichettati con
 Un albero binario è un albero k-ario con k=2 
 Un albero k-ario **completo** è un albero k-ario in cui tutte le foglie hanno la stessa profondità e tutti i nodi interni hanno grado k.
 
-![[Untitled Diagram.svg]]
+![[Es1.svg]]
 
 Esercizio. Trovare il numero di nodi interni di un albero k-ario completo la cui altezza risulta essere k.
 
@@ -98,7 +98,7 @@ Operazioni:
 
 Sia T=(N,A) un albero con n nodi numerati da 0 a n-1
 
-![[./Untitled Diagram 1.svg]]
+![[Untitled Diagram 1.svg]]
 
 P: vettore d di dimensione r le cui celle sono coppie (info,parent)%%da rivedere%%
 
@@ -574,3 +574,156 @@ void insert(Tree T, Node z){
 } 
 ```
 **Complessità**: $T(n) = O(h)$ perché si segue un cammino dalla radice verso il basso. 
+
+
+%%2022-11-22%%
+
+Esercitazione 1
+
+#### Cancellazione
+
+Si possono distinguere tre casi con difficoltà crescente:
+- Foglia: se z non ha figli, modifichiamo suo padre (z.p) per sostituire z con NIL
+- Un unico figlio: stacchiamo il nodo z creando un collegamento tra suo figlio (z.child) e suo padre (z.p)
+- Due figli: troviamo il successore y di z che deve trovarsi nel sotto-albero destro di z e facciamo in modo che y assuma la posizione di z nell'albero
+
+Per spostare i sotto-alberi si usa:
+
+```python
+def trasplant(Tree T, Node u, Node v):
+	# sostituisce il sottoalbero con radice nel nodo u con
+	# il sottoalbero con radice nel nodo v
+	if u.p == null:
+		T.root = v
+	else:
+	 if u == u.p.left:
+		 u.p.left = v
+		else:
+			u.p.right = v
+	if v != null:
+		v.p = u.p
+```
+
+```python
+# pre: il nodo z appartiene all'albero T
+def delete(Tree T, Node z):
+	if z.left == null:
+		trasplant(T, z, z.right)
+	else:
+		if z.right == null:
+			trasplant(T, z, z.left)
+		else:
+			y = tree_minimum(z.right) # O(h)
+			if y.p != z:
+				trasplant(T, y, y.right)
+				y.right = z.right
+				z.right.p = y
+			trasplant(T, z, y)
+			y.left = z.left
+			y.left.p = y
+```
+
+**Complessità**: $T(n) = O(h)$ con h = altezza dell'albero
+
+> **Teorema**
+> Le operazioni search, minimum, maximum, succ e prev, insert e delete possono essere realizzate nel tempo $O(h)$ in un albero binario di ricerca di altezza h.
+> **Cercare di mantenere bilanciato l'albero binario di ricerca perché questo fa si che tutte le operazioni abbiano tempo di esecuzione di $\log n$** 
+
+
+#### Creazione albero
+```python
+	def buildBST(Arr A):
+		t = newTree()
+		for i=1 to A.length:
+			u = creaNodo(A[i]) # u.key = A[i] a.left & a.right = null
+			Tree_Insert(t,u)
+		return T
+```
+
+**Complessità**:
+$$\begin{align}
+ \sum\limits_{i=0}^{n-1} (c + di) & = \\
+& = cn + d  \sum\limits_{i=0}^{n-1} i \\
+& =  cn + d \cfrac{n-1}{n-1+1}{2} \\
+& = cn + d \frac{n(n-1)}{2} \\
+& = \Theta(n^{2})
+\end{align}$$
+
+```python
+# ipotesi: A è ordinato
+def buildBSTOtt(Arr A):
+	t = newTree()
+	t.root = buildBTSOTTAux(A, 1, A.length, null)
+	return t
+
+
+def buildBTSOTTAux(Arr A, int inf, int sup, Node padre):
+	if(inf > sup):
+		return null
+	else: 
+		elementoCentrale = floor((inf+sup)/2)
+		r = creaNodo(A[elementoCentrale])
+		r.p = padre
+		r.left = buildBTSOTTAux(A, inf, elementoCentrale-1, r)
+		r.right = buildBTSOTTAux(A, elementoCentrale+1, sup, r)
+		return r
+```
+
+%%2022-11-28-%%
+
+# Esercizi d'esame
+
+dato un albero binario di ricerca, scrivere un algoritmo efficiente che restituisca il numero di elementi che occorrono una sola volta e analizzarne la complessità.
+
+![[Es1.svg]]
+
+```C++
+
+int contaDistinti(PTree T){
+	PNode iter; 
+	if(T->r == nullptr){
+		return 0;
+	}
+	else {
+		iter = tree_minimum(T);
+		numDist = 0;
+		count = 1;
+		prevValue = iter->key;
+		iter = succ(iter);
+		while(iter-> != nullptr){
+			if(iter->key == value){
+				count++;
+			}
+			else {
+				if(count == 1){
+					numDist++;				
+				}
+				count = 0;
+				prevValue = iter->key;
+			}
+			iter = succ(iter);
+		}
+		// controllare l´ ultimo elemento perché non viene controllato nel while
+		if(count == 1){
+			numDist++;
+		}
+		return numDist;
+	}
+}
+```
+**Complessità**
+
+L'attraversamento simmetrico di un albero binario di ricerca di n nodi può essere implementato trovando l; elemento minimo dell'albero con la procedura Tree_minimum e poi, effettuando n-1 chiamate di Tree_succ(). Dimostrare che questo algoritmo viene eseguito ne tempo $\Theta(n)$
+
+Dim
+Le chiamate a Tree_minimum seguita da n-1 chiamate a Tree_succ esegure esattamente una cista simmetrica come fa la procedura ricorsiva INORDER. Infatti INORDER stampa prima Tree_minimum e poi definizione il  Tree_succ di un nodo è il prossimo nodo di una visita simmetrica. L'algoritmo ha tempo di esecuzione perché:
+- richiede \Omega(n) per effettuare le n chiamate di procedura
+- attraversare ognuno dei n-1 archi al più 2 volte, che richiede $O(n)$.
+Sia (u,v) un generico arco.
+Partiamo dalla radice, dobbiamo attraversare l'arco (u,v) da u a v.
+L'unico modo di attraversarlo "downward" è nella procedura.
+Tree_minimum mentre "upwards" è nella procedura Tree_succ quando il nodo a cui applico Tree_succ non ha sotto-albero destro. 
+
+
+Sia T un albero binario di ricerca contente n chiavi intere distinte. Sia k una chiave di T. Si consideri il problema di eliminare da T tutte le chiavi maggiori di k
+
