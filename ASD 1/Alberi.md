@@ -673,7 +673,9 @@ def buildBTSOTTAux(Arr A, int inf, int sup, Node padre):
 
 # Esercizi d'esame
 
-dato un albero binario di ricerca, scrivere un algoritmo efficiente che restituisca il numero di elementi che occorrono una sola volta e analizzarne la complessità.
+## Esercizio 1
+
+Dato un albero binario di ricerca, scrivere un algoritmo efficiente che restituisca il numero di elementi che occorrono una sola volta e analizzarne la complessità.
 
 ![[Es1.svg]]
 
@@ -725,5 +727,11 @@ L'unico modo di attraversarlo "downward" è nella procedura.
 Tree_minimum mentre "upwards" è nella procedura Tree_succ quando il nodo a cui applico Tree_succ non ha sotto-albero destro. 
 
 
+## Esercizio 2
+
 Sia T un albero binario di ricerca contente n chiavi intere distinte. Sia k una chiave di T. Si consideri il problema di eliminare da T tutte le chiavi maggiori di k
+
+
+
+## Esercizio 3
 
