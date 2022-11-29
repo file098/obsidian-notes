@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8ea97ad03ef3857c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ASD 1/Ordinamento.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASD 1/Alberi.md"
+                "file": "ASD 1/Ordinamento.md"
               }
             }
           },
@@ -127,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASD 1/Alberi.md",
+                "file": "ASD 1/Ordinamento.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASD 1/Alberi.md",
+                "file": "ASD 1/Ordinamento.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,10 +169,10 @@
     "direction": "horizontal",
     "width": 202.5
   },
-  "active": "cf2b2542482c5d4a",
+  "active": "8ea97ad03ef3857c",
   "lastOpenFiles": [
-    "ASD 1/Grafi alberi/Es1.svg",
     "ASD 1/Alberi.md",
+    "ASD 1/Grafi alberi/Es1.svg",
     "Basi di Dati 1/SQL.md",
     "Basi di Dati 1/Untitled.md",
     "Basi di Dati 1/Algebra relazionale.md",

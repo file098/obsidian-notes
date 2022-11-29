@@ -733,5 +733,20 @@ Sia T un albero binario di ricerca contente n chiavi intere distinte. Sia k una 
 
 
 
-## Esercizio 3
+### Osservazioni alberi binari di ricerca
 
+#### Albero AWL: alberi binari di ricerca bilanciati
+
+Il **fattore di bilanciamento** di un nodo è la differenza fra l'altezza del sottoalbero sinistro di un nodo e quella del suo sottoalbero destro. In un albero AVL il valore assolute del fattore di bilanciamento è $\leq 1$ su ogni nodo.
+
+
+#### B-Alberi
+
+è un albero binario di ricerca bilanciato dove:
+
+- tutte le foglie hanno la stessa profondità
+- ogni nodo v diverso dalla radice ci sono K(v) chiavi ordinate tale che $t-1 \leq K(v) \leq 2t-1$
+- la radice mantiene almeno una chiave e al più 
+- ogni nodo interno v ha $K(v)+1$ figli
+- le chiavi separano gli intervalli di chiavi memorizzate in ciascun sottoalbero di un nodo v, allora $c_1 \leq chiave_1(v) \leq c_2 \leq chiave_2(2) \leq ...$
+c_1 \leq chiave_1(v) \leq c_2 \leq chiave_2(2) \leq ...
