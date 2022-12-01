@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5086555480957
+    "width": 255.5086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -167,9 +168,10 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 202.5,
+    "collapsed": true
   },
-  "active": "8ea97ad03ef3857c",
+  "active": "99361a862013f3c3",
   "lastOpenFiles": [
     "ASD 1/Ordinamento.md",
     "ASD 1/Alberi.md",

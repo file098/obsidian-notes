@@ -119,6 +119,3 @@ WHERE NOT EXISTS (SELECT *
 									WHERE e.Candidato = s.Matricola AND e.Voto <> 30)
 ```
 
-
-%%2022-12-01%%
-
