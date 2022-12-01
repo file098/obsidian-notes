@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASD 1/Ordinamento.md",
+                "file": "Basi di Dati 1/SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASD 1/Ordinamento.md"
+                "file": "Basi di Dati 1/SQL.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASD 1/Ordinamento.md",
+                "file": "Basi di Dati 1/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASD 1/Ordinamento.md",
+                "file": "Basi di Dati 1/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,6 +171,7 @@
   },
   "active": "8ea97ad03ef3857c",
   "lastOpenFiles": [
+    "ASD 1/Ordinamento.md",
     "ASD 1/Alberi.md",
     "ASD 1/Grafi alberi/Es1.svg",
     "Basi di Dati 1/SQL.md",
@@ -179,7 +180,6 @@
     "Basi di Dati 1/Introduzione.md",
     "ASD 1/Grafi alberi/Albero di ricerca.svg",
     "ASD 1/Complessità.md",
-    "ASD 1/Confronto tra algoritmi.md",
-    "Calcolo 1/Lezione 1.md"
+    "ASD 1/Confronto tra algoritmi.md"
   ]
 }
