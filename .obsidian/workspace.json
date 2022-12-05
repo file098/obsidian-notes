@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASD 1/Complessità.md",
+                "file": "ASD 1/Ordinamento.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5086555480957
+    "width": 255.5086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -96,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASD 1/Complessità.md"
+                "file": "ASD 1/Ordinamento.md"
               }
             }
           },
@@ -114,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASD 1/Complessità.md",
+                "file": "ASD 1/Ordinamento.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASD 1/Complessità.md",
+                "file": "ASD 1/Ordinamento.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,13 +143,14 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 202.5,
+    "collapsed": true
   },
   "active": "aa000284a73748d9",
   "lastOpenFiles": [
+    "ASD 1/Complessità.md",
     "ASD 1/Confronto tra algoritmi.md",
     "ASD 1/Ordinamento.md",
-    "ASD 1/Complessità.md",
     "ASD 1/Alberi.md",
     "Basi di Dati 1/SQL.md",
     "Basi di Dati 1/Algebra relazionale.md",
