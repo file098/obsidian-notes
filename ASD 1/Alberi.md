@@ -718,7 +718,7 @@ int contaDistinti(PTree T){
 L'attraversamento simmetrico di un albero binario di ricerca di n nodi può essere implementato trovando l; elemento minimo dell'albero con la procedura Tree_minimum e poi, effettuando n-1 chiamate di Tree_succ(). Dimostrare che questo algoritmo viene eseguito ne tempo $\Theta(n)$
 
 Dim
-Le chiamate a Tree_minimum seguita da n-1 chiamate a Tree_succ esegure esattamente una vista simmetrica come fa la procedura ricorsiva INORDER. Infatti INORDER stampa prima Tree_minimum e poi definizione il  Tree_succ di un nodo è il prossimo nodo di una visita simmetrica. L'algoritmo ha tempo di esecuzione perché:
+Le chiamate a Tree_minimum seguita da n-1 chiamate a Tree_succ esegue esattamente una vista simmetrica come fa la procedura ricorsiva INORDER. Infatti INORDER stampa prima Tree_minimum e poi definizione il  Tree_succ di un nodo è il prossimo nodo di una visita simmetrica. L'algoritmo ha tempo di esecuzione perché:
 - richiede \Omega(n) per effettuare le n chiamate di procedura
 - attraversare ognuno dei n-1 archi al più 2 volte, che richiede $O(n)$.
 Sia (u,v) un generico arco.
