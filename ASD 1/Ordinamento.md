@@ -33,3 +33,4 @@ L'algoritmo è un ordinamento in loco perché un solo elemento è memorizzato al
 Caso migliore: se l'input è ordinato in senso crescente -> $\Theta(n)$
 Caso peggiore: se l'input è ordinato in senso decrescente -> $\Theta(n^2)$
 
+![[Pasted image 20221205114444.png]]
