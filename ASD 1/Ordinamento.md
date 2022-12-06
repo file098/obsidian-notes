@@ -35,6 +35,8 @@ Caso peggiore: se l'input è ordinato in senso decrescente -> $\Theta(n^2)$
 
 ![[Pasted image 20221205114444.png]]
 
+%%2022-12-05%%
+
 ## Merge-sort
 
 Algoritmo basato sulla strategia del divide et impera
@@ -139,4 +141,6 @@ def partition(array A, int p, int r):
 	swap(A[i+1], A[r])
 	return i+1
 ```
+
+%%2022-12-06%%
 
