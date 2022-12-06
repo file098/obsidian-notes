@@ -133,9 +133,10 @@ def partition(array A, int p, int r):
 	x = A[r]
 	i = p-1
 	for j=p to r-1:
-		if A[j] =< x:
+		if A[j] <= x:
 			i++;
 			swap(A[i], A[j])
 	swap(A[i+1], A[r])
 	return i+1
 ```
+
