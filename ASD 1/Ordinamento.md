@@ -144,3 +144,91 @@ def partition(array A, int p, int r):
 
 %%2022-12-06%%
 
+**Complessità `partition`**: $T(n) = \Theta(n) \qquad n = r-p+1$
+
+**Complessità**: 
+$$\begin{align} T(n) =
+\begin{cases}  O(1) & n \leq 1 \\ \\
+\\
+T(k) + T(n-1-k) + \Theta(n)&  n>1 \\
+\end{cases}
+\end{align}
+$$
+
+> **Note**
+> il tempo di esecuzione dipende <u>fortemente</u> dalla scelta del nostro pivot, quindi dal partizionamento del sottoarray
+
+
+### Caso peggiore
+un sottoarray contiene n-1 elementi, quindi fortemente sbilanciato e già ordinato
+$$\begin{align}
+T(n) & = \\
+& = T(n-1) + T(0) + \Theta(n) \\
+& = T(n-1) + \Theta(n) = T(n-1) + cn \\
+& = T(n-1)+cn = T(n-2)+c(n-1) + cn \\
+& = \sum\limits^{n}_{i=1} ci \\
+& = c \sum\limits_{i=1}^{n} \\
+& = \frac{c(n(n+1))}{2} \\
+& = \Theta(n^{2}) \\
+\end{align}$$
+### Caso migliore
+i sottoarray sotto bilanciati 
+$$T(n) = 2T\left(\frac{n}{2}\right)+ \Theta(n) = \Theta(n \log n)$$
+### Caso medio
+supponiamo che il nostro algoritmo produca sempre una ripartizione proporzionale a 9-a-1.
+
+l'altezza dell'albero è $\log_{\cfrac{10}{9}} n$
+$$\begin{align}
+T(n) = & \\
+& = T\left(\frac{n}{10}\right)+ T\left(\frac{9n}{10}\right) + cn \\
+& cn \implies \text{costi a livello più alto delle ricorrenze} \\
+& = O(n \log n)
+\end{align}$$
+
+Qualsiasi proporzionalità costante $T(n) = T(\alpha n) + T(i - \alpha) + cn \quad 0<\alpha<1 \quad e \quad c>0$ produce un albero di ricorsione di profondità $\Theta(n \log n)$ dove il costo di ogni livello è limitato superiormente da $O(n)$. Il tempo di esecuzione è quindi $O(n \log n)$.
+
+#### Sistema di ricorrenze
+
+Le partizioni si alternano tra buone (lucky) e cattive (unlucky).
+
+$L(n) = 2U\left(\frac{n}{2}\right)+ \Theta(n)$
+$U(n) = L(n-1) + \Theta(n)$
+
+$L(n) = 2\left(L (\frac{n}{2} -1\right)+ \Theta(n)) + \Theta(n) = 2L\left(\frac{n}{2} - 1\right)+ \Theta(n) = \Theta(n \log n)$
+
+### Ottimizzazioni
+
+
+#### Quick-sort randomizzato
+
+Prestazione 3-4 volte più veloce su input di grandi dimensioni del merge-sort
+
+Invece di scegliere A[r] (ultimo elemento) come pivot, scambieremo l'elemento A[r] con un elemento **scelto casualmente** da la parte di vettore che noi stiamo andando a ordinare. 
+
+
+```python 
+
+def randomized_quicksort(array A, int p, int r):
+	if p<r
+		q = randomized_partition(A,p,r)
+		randomized_quicksort(A, p, q-1)
+		randomized_quicksort(A, q+1, r)
+		
+def randomized_partition(Array A, int p, int r):
+	i = random(p,r)
+	swap(A[i], A[r])
+	return partition(A, p, r)
+```
+
+
+Vantaggi:
+**Assunzioni chiavi distinte**
+1) tempo di esecuzione è indipendente dall'ordinamento dell'input
+2) nessuna assunzione sulla distinzione dell'input
+3) nessun specifico input può portare al caso pessimo
+4) il caso peggiore è determinato solamente dal generatore di numeri casuali
+
+
+#### Altre ottimizzazioni
+
+Utilizzare l'insertion-sort su vettori di piccole dimensioni 
