@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basi di Dati 1/Algebra relazionale.md",
+                "file": "ASD 1/Complessità.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5086555480957,
-    "collapsed": true
+    "width": 255.5086555480957
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -122,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basi di Dati 1/SQL.md"
+                "file": "ASD 1/Complessità.md"
               }
             }
           },
@@ -140,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basi di Dati 1/SQL.md",
+                "file": "ASD 1/Complessità.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basi di Dati 1/SQL.md",
+                "file": "ASD 1/Complessità.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,20 +166,31 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5,
-    "collapsed": true
+    "width": 202.5
   },
-  "active": "99361a862013f3c3",
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "aa000284a73748d9",
   "lastOpenFiles": [
+    "ASD 1/Confronto tra algoritmi.md",
+    "Basi di Dati 1/Algebra relazionale.md",
     "ASD 1/Ordinamento.md",
     "ASD 1/Alberi.md",
     "ASD 1/Grafi alberi/Es1.svg",
     "Basi di Dati 1/SQL.md",
     "Basi di Dati 1/Untitled.md",
-    "Basi di Dati 1/Algebra relazionale.md",
     "Basi di Dati 1/Introduzione.md",
     "ASD 1/Grafi alberi/Albero di ricerca.svg",
-    "ASD 1/Complessità.md",
-    "ASD 1/Confronto tra algoritmi.md"
+    "ASD 1/Complessità.md"
   ]
 }

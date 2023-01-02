@@ -119,3 +119,49 @@ WHERE NOT EXISTS (SELECT *
 									WHERE e.Candidato = s.Matricola AND e.Voto <> 30)
 ```
 
+%%2022-12-07%%
+
+Cani(Cod, Nome, Razza*, Madre*, Padre*, AnnoNasc, AnnoMorte, Istruttore*)  
+Madre FK(Cani), Padre FK(Cani), Razza FK(Razze), Istruttore FK(Istruttori)  
+Dare il nome di ogni cane che ha entrambi i genitori e i loro genitori della sua  
+stessa razza
+
+```SQL
+CREATE VIEW StessaRazza(Cane, Padre, Madre, Razza)
+AS SELECT c.Id p.Id m.Id c.Razza
+	FROM Cani c JOIN Cani p ON c.Padre = p.Id
+		JOIN Cani m ON c.Madre = m.Id 
+	WHERE c.Razza = p.Razza AND c.Razza = m.Razza
+
+SELECT c.Nome
+# il cane che sto considerando
+FROM Cani c JOIN StessaRazza sameRace ON c.Id = sameRace.Cane
+	JOIN StessaRazza p ON c.Padre = p.Cane
+	JOIN StessaRazza m ON c.Madre = m.Cane
+```
+
+## Vincoli di integrità 
+
+vincoli intrareferenziali: vincoli che valgono sulla tabella stessa.
+```SQL
+
+
+VincoloTabella := UNIQUE (Attributo {, Attributo})  
+	| CHECK (Condizione) |  
+	| PRIMARY KEY (Attributo {, Attributo})  
+	| FOREIGN KEY (Attributo {, Attributo})  
+	REFERENCES Tabella [(Attributo {, Attributo})]  
+	[ON DELETE CASCADE | NO ACTION | SET DEFAULT | SET NULL ]  
+	[ON UPDATE CASCADE | NO ACTION | SET DEFAULT | SET NULL ]
+```
+
+
+# chiedi alla prof Differenza tra WITH e VIEW e la loro "durata"
+
+per ogni nazione restituire il numero di medaglie d'oro da le donne e da gli uomini nella disciplina sci. Se una nazione non ha vinto medaglie di un certo tipo, restituire 0. 
+
+
+```SQL
+SELECT a.Nazione, SUM(CASE WHEN a.Sesso = 'm' AND m.Codice IS NOT NULL THEN 1 ELSE 0) AS NumMaschi, SUM(CASE WHEN a.Sesso = 'f' AND m.Codice IS NOT NULL THEN 1 ELSE 0) AS NumMaschi
+FROM Atleti a JOIN Medaglie m ON a.IdAtleta = m.IdAtleta AND m.Sport = 'Sci' AND m.Tipo = 'oro'\\
+GROUP BY a.Nazione 

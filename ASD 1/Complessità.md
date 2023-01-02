@@ -173,6 +173,9 @@ $$\begin{align} f(n) &= \Omega(n^{d+\epsilon}) \quad \exists \epsilon > 0 \land 
 \end{align}$$
 
 
+
+@@
+
 ### Esempi
 $$T(n) = T(\cfrac{n}{2}) + c$$
 - $a=1$
