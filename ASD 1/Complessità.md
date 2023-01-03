@@ -174,7 +174,15 @@ $$\begin{align} f(n) &= \Omega(n^{d+\epsilon}) \quad \exists \epsilon > 0 \land 
 
 
 
-@@
+$$\begin{align}
+& T(n) = aT(\frac{n}{b})+ cn^{k}, \text{with a, b, c, k are positive constants, and a>0 and b>1 } \\ \\
+
+& T(n) = \begin{cases} 
+& O(n^{log_{b} a}), & if \ a>b^{k} \\
+& O(n^{k} \log n), & if \ a=b^{k} \\
+& O(n^{k)} & if \ a<b^{k} \\
+\end{cases}\end{align}
+$$
 
 ### Esempi
 $$T(n) = T(\cfrac{n}{2}) + c$$

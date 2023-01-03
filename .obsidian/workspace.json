@@ -20,30 +20,59 @@
             }
           },
           {
-            "id": "cf2b2542482c5d4a",
+            "id": "c08bbbc8a67e029e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "772105cc4f116fad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASD 1/Alberi.md",
+                "file": "ASD 1/Confronto tra algoritmi.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8ea97ad03ef3857c",
+            "id": "dc10e33f7c29d8cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basi di Dati 1/SQL.md",
+                "file": "ASD 1/Complessità.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "658f3276dcd33a33",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "515e4d9ab23d630a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -120,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASD 1/Complessità.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -138,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASD 1/Complessità.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASD 1/Complessità.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,17 +209,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "aa000284a73748d9",
+  "active": "515e4d9ab23d630a",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "ASD 1/Complessità.md",
     "ASD 1/Confronto tra algoritmi.md",
-    "Basi di Dati 1/Algebra relazionale.md",
-    "ASD 1/Ordinamento.md",
     "ASD 1/Alberi.md",
+    "ASD 1/Ordinamento.md",
+    "ASD 1/Strutture dati elementari.md",
+    "Basi di Dati 1/Algebra relazionale.md",
     "ASD 1/Grafi alberi/Es1.svg",
     "Basi di Dati 1/SQL.md",
-    "Basi di Dati 1/Untitled.md",
-    "Basi di Dati 1/Introduzione.md",
-    "ASD 1/Grafi alberi/Albero di ricerca.svg",
-    "ASD 1/Complessità.md"
+    "Basi di Dati 1/Untitled.md"
   ]
 }
