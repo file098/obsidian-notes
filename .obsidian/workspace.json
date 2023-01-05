@@ -20,20 +20,12 @@
             }
           },
           {
-            "id": "c08bbbc8a67e029e",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "772105cc4f116fad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASD 1/Confronto tra algoritmi.md",
+                "file": "ASD 1/Alberi.md",
                 "mode": "source",
                 "source": false
               }
@@ -50,29 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "658f3276dcd33a33",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "515e4d9ab23d630a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -149,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "ASD 1/Alberi.md"
               }
             }
           },
@@ -167,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "ASD 1/Alberi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "ASD 1/Alberi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,11 +181,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "515e4d9ab23d630a",
+  "active": "772105cc4f116fad",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "ASD 1/Complessità.md",
     "ASD 1/Confronto tra algoritmi.md",
+    "ASD 1/Complessità.md",
+    "conflict-files-obsidian-git.md",
     "ASD 1/Alberi.md",
     "ASD 1/Ordinamento.md",
     "ASD 1/Strutture dati elementari.md",
