@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basi di Dati 1/Algebra relazionale.md",
+                "file": "Basi di Dati 1/SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basi di Dati 1/Algebra relazionale.md"
+                "file": "Basi di Dati 1/SQL.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basi di Dati 1/Algebra relazionale.md",
+                "file": "Basi di Dati 1/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basi di Dati 1/Algebra relazionale.md",
+                "file": "Basi di Dati 1/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,17 +157,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "519944d4dc483bbc",
+  "active": "d350937956bc480a",
   "lastOpenFiles": [
+    "Basi di Dati 1/Untitled.md",
+    "Basi di Dati 1/Algebra relazionale.md",
     "ASD 1/Complessità.md",
     "ASD 1/Ordinamento.md",
     "ASD 1/Alberi.md",
     "ASD 1/Confronto tra algoritmi.md",
     "conflict-files-obsidian-git.md",
     "ASD 1/Strutture dati elementari.md",
-    "Basi di Dati 1/Algebra relazionale.md",
     "ASD 1/Grafi alberi/Es1.svg",
-    "Basi di Dati 1/SQL.md",
-    "Basi di Dati 1/Untitled.md"
+    "Basi di Dati 1/SQL.md"
   ]
 }
