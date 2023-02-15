@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basi di Dati 2/Untitled.md",
+                "file": "Basi di Dati 2/Anomalie e Dipendenze funzionali.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5086555480957
+    "width": 255.5086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -96,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basi di Dati 2/Untitled.md"
+                "file": "Basi di Dati 2/Anomalie e Dipendenze funzionali.md"
               }
             }
           },
@@ -114,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basi di Dati 2/Untitled.md",
+                "file": "Basi di Dati 2/Anomalie e Dipendenze funzionali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basi di Dati 2/Untitled.md",
+                "file": "Basi di Dati 2/Anomalie e Dipendenze funzionali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,8 +143,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5,
-    "collapsed": true
+    "width": 202.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,7 +160,7 @@
   "active": "d45befececf7770d",
   "lastOpenFiles": [
     "ASD 2/Algoritmi di ordinamento.md",
-    "Basi di Dati 2/Untitled.md",
+    "Basi di Dati 2/Anomalie e Dipendenze funzionali.md",
     "ASD 2/Untitled Diagram.svg",
     "ASD 2/Untitled.md",
     "Basi di Dati 1/SQL.md",
