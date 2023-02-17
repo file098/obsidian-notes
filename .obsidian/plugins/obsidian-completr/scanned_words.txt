@@ -334,6 +334,8 @@ AwAAAAAAAACSJEmSJEmSJEmSJNu
 AAAAAAADImUmSJEmSJElKkiRJkiRJUrMTG
 AiISM
 AHXsOHDlx
+Assiomi
+Armstrong
 alle
 albero
 an
@@ -639,6 +641,10 @@ alF
 aGDAICXyRNcFzjYNXiiJ
 aWKG
 amzixW
+albano
+attributi
+avere
+allora
 perso
 per
 permutazione
@@ -929,6 +935,8 @@ pZRSl
 pODeb
 path
 pointer
+posso
+persone
 min
 meglio
 ma
@@ -1564,6 +1572,12 @@ dbsVf
 drSJtnbtfS
 dhpmZmYuhURERERERFVVVVVV
 dlrOzXKoLbYoo
+dati
+dipendenza
+della
+dipendenze
+devono
+diverse
 lezione
 le
 la
@@ -1857,6 +1871,8 @@ lVrs
 lUoRKgw
 linejoin
 linecap
+libro
+logicamente
 Decisione
 Dato
 Daughter
@@ -2136,6 +2152,8 @@ DZCBUknFgNXTNzA
 Dpqx
 DDuo
 DhA
+Dipendenza
+Diciamo
 Per
 PPz
 PpPy
@@ -2770,6 +2788,7 @@ efME
 emRYqVKFVmiaWWWW
 ecdc
 events
+ennuple
 ordino
 orginare
 ordinamento
@@ -3048,6 +3067,7 @@ onVgGgM
 oivMwgCA
 ojOYPP
 otgvu
+orsini
 tre
 tipologie
 tale
@@ -3337,6 +3357,9 @@ tWQGQgghhBBCCCG
 tW
 tQUIvt
 tGLEs
+tali
+terza
+telefono
 In
 Il
 ItLuyLNtLYC
@@ -3892,6 +3915,7 @@ gM
 goqJjXr
 gRqw
 gYNGjVrtcl
+ghelli
 un
 una
 unico
@@ -4213,6 +4237,7 @@ usg
 uWqw
 ufC
 ufGcjN
+uno
 input
 interno
 indici
@@ -4514,6 +4539,12 @@ ihobG
 izT
 idgCQvYkYmFQMLbpYVkwSFx
 iTQ
+insiemi
+istanza
+indicare
+istanze
+implica
+indicato
 nodo
 noistri
 nell
@@ -4798,6 +4829,7 @@ nCFIvE
 nOR
 neb
 nMxFP
+non
 Ogni
 Omega
 On
@@ -5441,6 +5473,12 @@ sDlcoEu
 sfNzo
 sKVG
 stroke
+schema
+siano
+soddisfa
+sue
+soddisfare
+stesso
 Significa
 SGw
 Stv
@@ -5716,6 +5754,8 @@ SLnemzXbQdfKt
 SSUO
 SJE
 SxMS
+Sia
+Scriveremo
 confronta
 che
 correggere
@@ -6043,6 +6083,12 @@ cSeExEhqbbfB
 csJngMwUCqBiUVP
 czMzMzMDNG
 cuwf
+consigliato
+coppia
+coincide
+chiediamo
+con
+condizione
 foglia
 foto
 foglie
@@ -6351,6 +6397,9 @@ fFM
 ftw
 fIssNCi
 fill
+funzionale
+forma
+funzionali
 veloce
 volta
 version
@@ -6642,6 +6691,10 @@ vSFU
 vh
 vbOZ
 vHFp
+vuoti
+vincolo
+valide
+valida
 qualsiasi
 qquad
 quad
@@ -7524,6 +7577,7 @@ TIqBEqJCmeyEMXjlK
 TVdPanFCwiYwT
 TcI
 Tr
+Teorema
 Un
 Uptheta
 UkAUbjRFjJfkJxfuvIG
@@ -8637,6 +8691,7 @@ LGrodtnkHmyeW
 LlWKaXUpVlu
 LTFgOorsiRYAAAAAAAAAAAAAVVVVVVVVFTYAAAAAAABUVVVVVVVVVVWJOuecc
 LiOES
+La
 binario
 binari
 begin
@@ -8951,6 +9006,7 @@ bNmYAAAAAAAAAAACSJNVZWbpBT
 bdu
 bYMCAAAAAABAVVVVVdW
 bTsYhwQAAMiZSZIkSYqIiIhUh
+basi
 radice
 rceil
 rfloor
@@ -9215,6 +9271,7 @@ rfZ
 rGgAAAAAAAARERGR
 rrnHP
 round
+relazione
 xmlns
 xFVeT
 xJM
@@ -14191,6 +14248,8 @@ FHYaV
 FlcHMOx
 FAgQKMuciuxg
 FlVb
+Fondamenti
+Formalmente
 VQv
 Vv
 VhfRYYzxbiu
