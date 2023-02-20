@@ -83,4 +83,31 @@ piuttosto ottimizzato per la ricerca di tutte le chiavi.
 > Rappresentiamo i candidati da testare nella forma $X :: (Y )$, una forma compatta per descrivere tutti gli insiemi $X \cup Z$ con $Z \subseteq Y$
 
 
+### Verifica di primalità 
+
+Dato $R(T , F )$, il problema di verificare se un attributo $A \in T$ è primo ha  
+complessità esponenziale:  
+- più precisamente, si può dimostrare che è un problema NP-completo  
+- ciò implica che non esistono soluzioni significativamente più efficienti di generare tutte le possibili chiavi!  
+- questo è l’approccio che useremo per trovare l’insieme degli attributi primi quando sarà necessario
+
+#### Forma canonica
+
+Sia $X \rightarrow Y \in F$ . L’attributo A ∈ X è **estraneo**  $\iff X / \{A\} \rightarrow Y \in F^{+}$.  
+  
+> La dipendenza X → Y ∈ F è ridondante $\iff X → Y \in (F / \{X → Y \})^{+}$.  
+  
+F è in forma canonica se e solo se per ogni $X \rightarrow Y \in F$ :  
+1. $|Y | = 1$;  
+2. X non contiene attributi estranei;  
+3. $X → Y$ non è ridondante
+
+G è una copertura canonica di F se e solo se $F \equiv G$ e G è in forma canonica.  
+
+> **Teorema**  
+> Per ogni insieme di dipendenze F esiste una copertura canonica.  
+
+La dimostrazione è costruttiva: definiamo un algoritmo per produrre una  
+copertura canonica. Si osservi che uno stesso insieme di dipendenze può  
+avere più coperture canoniche.
 
