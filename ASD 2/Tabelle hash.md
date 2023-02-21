@@ -142,3 +142,4 @@ Se $n = O(m)$ abbiamo che $\alpha = \frac{n}{m} = \frac{O(m)}{m} = O(1)$
 ### Indirizzamento aperto
 
 ## Funzione hash
+ 
