@@ -276,3 +276,6 @@ def cifra(int x, int n, int i):
 ```
 
 Complessità: $\Theta(n)$
+
+2023-02-20
+

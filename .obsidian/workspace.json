@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basi di Dati 2/Anomalie e Dipendenze funzionali.md",
+                "file": "ASD 2/Algoritmi di ordinamento.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "115349b3bafe1a31",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ASD 2/Tabelle hash.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basi di Dati 2/Anomalie e Dipendenze funzionali.md"
+                "file": "ASD 2/Tabelle hash.md"
               }
             }
           },
@@ -115,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basi di Dati 2/Anomalie e Dipendenze funzionali.md",
+                "file": "ASD 2/Tabelle hash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basi di Dati 2/Anomalie e Dipendenze funzionali.md",
+                "file": "ASD 2/Tabelle hash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5
+    "width": 245.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -157,12 +170,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "d45befececf7770d",
+  "active": "115349b3bafe1a31",
   "lastOpenFiles": [
     "ASD 2/Algoritmi di ordinamento.md",
     "Basi di Dati 2/Anomalie e Dipendenze funzionali.md",
     "ASD 2/Untitled Diagram.svg",
-    "ASD 2/Untitled.md",
+    "ASD 2/Tabelle hash.md",
     "Basi di Dati 1/SQL.md",
     "Basi di Dati 1/Untitled.md",
     "Basi di Dati 1/Algebra relazionale.md",
