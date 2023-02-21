@@ -141,5 +141,126 @@ Se $n = O(m)$ abbiamo che $\alpha = \frac{n}{m} = \frac{O(m)}{m} = O(1)$
 
 ### Indirizzamento aperto
 
+Ogni cella contiene un elemento dell'insieme dinamico oppure NIL
+Per cercare un elemento di chiave $k$:
+1. calcolo la funzione hash $h(k)$ ed esamino la cella con indirizzo $h(k)$ (**ispezione**)
+2. se la cella $h(k)$ contiene la chiave $k$, la ricerca ha successo, se invece la cella contiene il valore NIL, la ricerca termina con insuccesso 
+3. la cella $h(k)$ contiene una chiave che non e' $k$, allora calcolo l'indice di un'altra cella, in base alla chiave $k$ e all'ordine di ispezioni (0,1,2,...)
+4. si continua la scansione della tabella finché non si trova la chiave $k$ (**successo**), oppure si trova una cella che contiene NIL (**insuccesso**), oppure ho eseguito *m* ispezioni senza successo (**insuccesso**)
+
+
+La funzione hash diventa:
+$$h: U \times \{ 0,1,...,m-1\} \rightarrow \{0,1,...,m-1\}$$
+$\rightarrow h(k,i)$ rappresenta la posizione della chiave $k$ dopo $i$ ispezioni fallite. 
+
+<u>Si richiede che per ogni chiave, la sequenza d'ispezioni, sia una permutazione dei possibili indici della mia tabella in modo che ogni posizione della tabella hash possa essere considerata come possibile cella in cui inserire una nuova chiave mentre la tabella si riempie</u>.
+
+#### Operazioni con il concatenamento
+
+Ipotesi:
+- elementi che contengono solo la chiave
+
+##### Inserimento
+
+Post-condizione: restituisce l'indice della cella dove ha memorizzato $k$ oppure segnala un errore se la tabella 'e piena
+
+```python
+def hash_insert(T,k):
+	i = 0
+	trovata = false
+	while trovata = true || i == m
+		j=h(k,i) # indice della cella
+			if(T[j] == NIL)
+				T[j] = k
+				trovata = true
+			else
+				i++
+	if trovata==true 
+		return j
+	else 
+		throw error "Tabella piena"
+```
+
+Complessità: $\Theta(1)$
+
+##### Ricerca
+
+
+
+```python
+def hash_search(T,k):
+	i=0
+	trovata=false
+	while trovata || i == m || T[j] == NIL:
+		j=h(k,i)
+		if(T[j] == k):
+			trovata = true
+		else:
+			i++
+	if trovata: 
+		return j
+	else:
+		return NIL
+```
+
+> **Post-condizione**
+> restituisce l'indice della cella dove ha memorizzato $k$ oppure oppure NIL se la chiave $k$ non si trova nella tabella
+
+Complessità: $\Theta(n)$
+
+##### Cancellazione
+
+La cancellazione risulta essere problematica.
+
+
+```python
+def hash_delete(T,k):
+	cancella x dalla lista T[h(x.key)]
+```
+
+
+
+
 ## Funzione hash
- 
+
+Di solito le funzioni di hash assumono che le chiavi siano numeri naturali. $\mathbb{N} = \{0,1,...,\}$  
+Se non sono numeri naturali, occorre fare interpolazione 
+Esempio: stringhe di caratteri "CLRS" 
+- valori ASCII C=67 L=76 R=82 S=83
+- 128 valori di base $128=2^7$
+
+CLRS = 128^0 
+
+#### Metodo della divisione
+
+Data una certa chiave K, $h(k)=k \mod{m}$ resto della divisione fra la chiave k e m. 
+Esempio: $m=13$ e $k=31$ $h(31) = 15$
+
+Vantaggi: semplice da realizzare
+Svantaggi: 
+- Evitare come m le potenze di 2. Se $m=2P$ allora $h(k)$ rappresenta i $P$ bit meno significativi della mia chiave $K$ -> meglio che la funzione hash dipenda da tutti i bit, non solo da quelli significativi
+- Se $K$ e una stringa di caratteri interpretata nella base $2^p$, una cattiva scelta $m=2^p -1$ -> permutazione dei caratteri di K non cambia il valore hash
+	- esempio: $2^{7} \qquad m=127=2^{7}-1 \qquad \qquad h(k) = k \mod{127} \rightarrow h(cod(CLRS)) == h(cod(CRLS))$
+
+**Una buona scelta per $m$: un numero primo non troppo vicino ad una potenza esatta di 2 o di 10.**
+
+Esempio:  si vogliono memorizzare $m=2000$ e prevedo una media di 3 collisioni, dimensiono la tabella hash $\frac{2000}{3} = 666,666 \rightarrow m=701$. 
+
+#### Metodo della moltiplicazione
+
+Sia $w$ di lunghezza di una parola di memoria $K$ caratteri in una singola parola di memoria
+Scelgo un intero q $0<q<2^{w}$ e $m=2^{p}$
+Pongo $A=\cfrac{q}{2^{w}}<1$
+Calcolo $KA=\cfrac{kq}{2^{w}}<1$
+$$\begin{align}
+h(K) = &\\
+&\lfloor m (KA \mod{1}) \rfloor \\
+&\lfloor 2^{p} (KA \mod{1}) \rfloor \\
+\end{align}
+$$
+Cosi ottengo i p bit più significativi della parola meno significativa di $k \times q$
+
+#### Hashing universale
+
+Ho un insieme $H$ di funzioni hash opportunamente costruito. Il programma all'inizio sceglie casualmente una funzione  $h \in H$.
+

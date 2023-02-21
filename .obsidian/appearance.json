@@ -1,6 +1,7 @@
 {
   "theme": "obsidian",
-  "cssTheme": "",
+  "cssTheme": "Obsidian Nord",
   "accentColor": "",
-  "nativeMenus": true
+  "nativeMenus": true,
+  "monospaceFontFamily": "Source Code Pro"
 }
