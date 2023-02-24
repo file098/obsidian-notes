@@ -129,3 +129,10 @@ Non tutte le decomposizioni sono desiderabili:
 
 Proprietà desiderabili: una buona decomposizione dovrebbe eliminare le  
 anomalie, ma preservare i dati e le dipendenze. 
+
+![[Pasted image 20230224141654.png]]
+
+Sia $p=\set{R_{1}(T_{1}),R_{2}(T_{2})}$ una decomposizione di $R(T,F)$ si ha che $p$ preserva i dati $\iff T_{1} \cup T_{2} \rightarrow T_{1} \in F^{+}$ oppure $T_{1} \cup T_{2} \rightarrow T_{2} \in F^{+}$.
+
+Questo permette di ricondurre il problema di determinare se una certa decomposizione binaria preserva i dati al problema dell’implicazione, che ha costo **polinomiale**.
+
