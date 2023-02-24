@@ -2,7 +2,7 @@
 
 %%libro consigliato: Fondamenti di basi di dati albano ghelli orsini%%
 
-## Dipendenza funzionale 
+# Dipendenza funzionale 
 
 Sia $R(T)$ uno schema di relazione e siano X , Y due insiemi di attributi  
 non vuoti tali che $X \cup Y \subseteq T$ , una **dipendenza funzionale** è un qualsiasi  
@@ -26,7 +26,7 @@ Sia $F = \{  CodiceLibro -> Titolo, CodiceLibro -> NomeUtente \}$ allora:
 $$F \models CodiceLibro \rightarrow Titolo,NomeUtente$$
 $$F \models CodiceLibro \rightarrow CodiceLibro$$
 
-### Assiomi di Armstrong 
+## Assiomi di Armstrong 
 
 Teorema:
 $$F \vdash X \rightarrow Y \iff F \models X \rightarrow Y$$
@@ -115,3 +115,17 @@ sick day
 
 2023-02-24
 
+# Decomposizione di schemi
+
+Dato uno schema R(T,F) una sua **decomposizione** è un insieme di schemi $p = \{ R_{1} (T_{1}, F_{1}), ... , R_{n}(T_{n}, F_{n}) \}$ tale che $U_{i} T_{i} = T, \forall i: T_{i} \neq \emptyset$ e $\forall i:F_{i} = \pi_{T_{i}} (F)$.
+Visto che gli $F_{i}$ sono determinati da $F$ e dai $T_{i}$, per la leggibilità scriveremo una decomposizione di R(T,F) solo come $p=\set{R_{1}(T_{1}),...,R_{n}(T_{n})}$. 
+
+### Proprietà
+
+Non tutte le decomposizioni sono desiderabili: 
+
+1. perdita di informazione: la decomposizione va ad introdurre dei dati spuri, che possono inficiare la correttezza di alcune query
+2. perdita di dipendenze: a decomposizione perde alcune dipendenze funzionali, andando ad alterare la semantica dei dati rappresentati
+
+Proprietà desiderabili: una buona decomposizione dovrebbe eliminare le  
+anomalie, ma preservare i dati e le dipendenze. 

@@ -663,6 +663,10 @@ alcuna
 aperto
 altra
 assumono
+alcune
+andando
+alterare
+anomalie
 perso
 per
 permutazione
@@ -989,6 +993,9 @@ potenza
 prevedo
 parola
 programma
+perdita
+perde
+preservare
 min
 meglio
 ma
@@ -1679,6 +1686,13 @@ dopo
 divisione
 dipenda
 dimensiono
+day
+decomposizione
+determinati
+dai
+decomposizioni
+desiderabili
+dovrebbe
 lezione
 le
 la
@@ -1977,6 +1991,7 @@ logicamente
 lineare
 lista
 liste
+leggibilit
 Decisione
 Dato
 Daughter
@@ -2260,6 +2275,7 @@ Dipendenza
 Diciamo
 Data
 DELETED
+Decomposizione
 Per
 PPz
 PpPy
@@ -2573,6 +2589,7 @@ Primi
 Poich
 Post
 Pongo
+Propriet
 esempio
 elementi
 etichettato
@@ -2913,6 +2930,7 @@ esamino
 eseguito
 errore
 esatta
+eliminare
 ordino
 orginare
 ordinamento
@@ -4726,6 +4744,9 @@ interpretata
 intero
 inizio
 insert
+informazione
+introdurre
+inficiare
 nodo
 noistri
 nell
@@ -5706,6 +5727,11 @@ significativa
 sceglie
 sostituendo
 search
+sick
+schemi
+scriveremo
+spuri
+semantica
 Significa
 SGw
 Stv
@@ -6365,6 +6391,7 @@ certa
 cattiva
 costruito
 casualmente
+correttezza
 foglia
 foto
 foglie
@@ -7288,6 +7315,7 @@ questo
 quando
 quanto
 quelli
+query
 Costruisco
 Cvsc
 CeElkXA
@@ -9603,6 +9631,7 @@ riempie
 restituisce
 resto
 realizzare
+rappresentati
 xmlns
 xFVeT
 xJM
@@ -13398,6 +13427,7 @@ Naw
 NlGu
 NCG
 NIL
+Non
 KIcMYWqBSgRByAqvg
 KBnd
 KDQmQgGbBQ
@@ -14911,6 +14941,7 @@ Verifica
 Vantaggio
 Voglio
 Vantaggi
+Visto
 jvIwt
 joC
 jXAU
