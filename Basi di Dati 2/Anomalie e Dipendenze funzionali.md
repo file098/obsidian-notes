@@ -40,11 +40,9 @@ $$F \vdash X \rightarrow Y \iff F \models X \rightarrow Y$$
 
 ### Chiavi ed Attributi Primi  
   
-> Dato una schema di relazione $R(T , F )$, un insieme di attributi $X \subseteq T$ è  
-una superchiave di R se e solo se $X \rightarrow T \in F^{+}$
+> Dato una schema di relazione $R(T , F )$, un insieme di attributi $X \subseteq T$ è una superchiave di R se e solo se $X \rightarrow T \in F^{+}$
 
-> Una chiave è una superchiave minimale, cioè una superchiave tale che  
-nessuno dei suoi sottoinsiemi propri sia a sua volta una superchiave.  
+> Una chiave è una superchiave minimale, cioè una superchiave tale che nessuno dei suoi sottoinsiemi propri sia a sua volta una superchiave.  
   
 > Un attributo è primo se e solo se appartiene ad almeno una chiave.
 
@@ -55,8 +53,8 @@ nessuno dei suoi sottoinsiemi propri sia a sua volta una superchiave.
 
 Trovare una chiave
 Dato R(T,F) è possibile trovare una chiave in tempo polinomiale. 
-```
-function FindKey(R(T,F))
+```python
+def FindKey(R(T,F)):
 	k <- T
 	for all A in T do
 		if (k/{A})+ = T then
@@ -110,4 +108,10 @@ G è una copertura canonica di F se e solo se $F \equiv G$ e G è in forma canon
 La dimostrazione è costruttiva: definiamo un algoritmo per produrre una  
 copertura canonica. Si osservi che uno stesso insieme di dipendenze può  
 avere più coperture canoniche.
+
+2023-02-23
+
+sick day 
+
+2023-02-24
 
