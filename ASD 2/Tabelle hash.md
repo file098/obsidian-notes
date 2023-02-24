@@ -185,8 +185,6 @@ Complessità: $\Theta(1)$
 
 ##### Ricerca
 
-
-
 ```python
 def hash_search(T,k):
 	i=0
@@ -212,14 +210,25 @@ Complessità: $\Theta(n)$
 
 La cancellazione risulta essere problematica.
 
-
 ```python
-def hash_delete(T,k):
-	cancella x dalla lista T[h(x.key)]
+def hash_insert(T,k):
+	i = 0
+	trovata = false
+	while trovata = true || i == m
+		j=h(k,i) # indice della cella
+		if(T[j] == NIL || T[j] == DELETED):
+				T[j] = k
+				trovata = true
+			else
+				i++
+	if trovata==true 
+		return j
+	else 
+		throw error "Tabella piena"
 ```
 
-
-
+La funzione hash_insert 'e modificata per trattare la cella con il valore DELETED, sostituendo l' `if ` con `if + ||` 
+La funzione hash_search non richiede alcuna modifica. 
 
 ## Funzione hash
 

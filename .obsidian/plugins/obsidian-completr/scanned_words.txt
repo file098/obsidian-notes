@@ -1311,6 +1311,8 @@ mentre
 memorizzato
 media
 moltiplicazione
+modificata
+modifica
 di
 da
 disegnare
@@ -2257,6 +2259,7 @@ DhA
 Dipendenza
 Diciamo
 Data
+DELETED
 Per
 PPz
 PpPy
@@ -3499,6 +3502,7 @@ tabelle
 testa
 termina
 trova
+trattare
 In
 Il
 ItLuyLNtLYC
@@ -4721,6 +4725,7 @@ interpolazione
 interpretata
 intero
 inizio
+insert
 nodo
 noistri
 nell
@@ -5699,6 +5704,8 @@ scelta
 singola
 significativa
 sceglie
+sostituendo
+search
 Significa
 SGw
 Stv
