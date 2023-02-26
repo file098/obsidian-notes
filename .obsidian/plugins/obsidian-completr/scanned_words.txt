@@ -996,6 +996,8 @@ programma
 perdita
 perde
 preservare
+preserva
+permette
 min
 meglio
 ma
@@ -1693,6 +1695,7 @@ dai
 decomposizioni
 desiderabili
 dovrebbe
+determinare
 lezione
 le
 la
@@ -4747,6 +4750,7 @@ insert
 informazione
 introdurre
 inficiare
+implicazione
 nodo
 noistri
 nell
@@ -8444,6 +8448,7 @@ QPZSOp
 QheyC
 QUVDQQOgYmFnNsFixZsWaDg
 Quando
+Questo
 ha
 height
 html
@@ -9353,6 +9358,7 @@ basi
 bisogno
 bit
 buona
+binaria
 radice
 rceil
 rfloor
@@ -9632,6 +9638,7 @@ restituisce
 resto
 realizzare
 rappresentati
+ricondurre
 xmlns
 xFVeT
 xJM
