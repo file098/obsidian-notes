@@ -230,6 +230,8 @@ def hash_insert(T,k):
 La funzione hash_insert 'e modificata per trattare la cella con il valore DELETED, sostituendo l' `if ` con `if + ||` 
 La funzione hash_search non richiede alcuna modifica. 
 
+**Svantaggio**: il tempo di ricerca non dipende più dal fattore di carico $\alpha = \cfrac{n}{m}$
+
 ## Funzione hash
 
 Di solito le funzioni di hash assumono che le chiavi siano numeri naturali. $\mathbb{N} = \{0,1,...,\}$  
@@ -272,4 +274,11 @@ Cosi ottengo i p bit più significativi della parola meno significativa di $k \t
 #### Hashing universale
 
 Ho un insieme $H$ di funzioni hash opportunamente costruito. Il programma all'inizio sceglie casualmente una funzione  $h \in H$.
+
+2023-02-27
+
+
+###### Metodi di scansione
+
+La situazione ideale è hashing uniforme: ogni chiave ha la stessa probabilità di avere come sequenza d'ispezioni una delle $m!$ permutazioni di $<0,1,...,m-1>$ 
 
