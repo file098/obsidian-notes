@@ -1,4 +1,3 @@
-
 User: write a script for a youtube video of a backpack review
 
 Assistant:
