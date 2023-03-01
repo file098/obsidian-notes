@@ -1,5 +1,4 @@
 2023-02-20
-# Introduzione
 
 Un applicazione ha bisogno: 
 - insieme dinamico
@@ -13,7 +12,7 @@ Si può utilizzare un array la cui dimensione è $T[0,...,\omega-1]$
 
 Le operazioni da implementare sono:
 
-## Operazioni su tabella indirizzamento diretto
+# Operazioni su tabella indirizzamento diretto
 
 ### Ricerca
 ```python 
@@ -39,7 +38,7 @@ complessità: $\Theta(1)$
 **Vantaggio**: operazioni in tempo costante
 **Svantaggio**: Lo spazio utilizzato è proporzionale a $\omega=|U|$ e  non al numero n di elemento effettivamente associati -> spreco di memoria 
 
-## Tabelle hash
+# Tabelle hash
 
 Quando l'insieme delle chiavi da memorizzare è molto più piccolo dell'universo U (tutte le possibili chiavi), allora una tabella hash richiede molto meno spazio di una tabella ad indirizzamento diretto.
 
@@ -232,7 +231,7 @@ La funzione hash_search non richiede alcuna modifica.
 
 **Svantaggio**: il tempo di ricerca non dipende più dal fattore di carico $\alpha = \cfrac{n}{m}$
 
-## Funzione hash
+# Funzione hash
 
 Di solito le funzioni di hash assumono che le chiavi siano numeri naturali. $\mathbb{N} = \{0,1,...,\}$  
 Se non sono numeri naturali, occorre fare interpolazione 
@@ -278,7 +277,94 @@ Ho un insieme $H$ di funzioni hash opportunamente costruito. Il programma all'in
 2023-02-27
 
 
-###### Metodi di scansione
+#### Metodi di scansione
 
 La situazione ideale è hashing uniforme: ogni chiave ha la stessa probabilità di avere come sequenza d'ispezioni una delle $m!$ permutazioni di $<0,1,...,m-1>$ 
+ovvero
+
+$$
+
+\begin{align}
+
+h(k,0) \space \text{si distribuisca uniformamente nella m celle}\\
+
+h(k,1) \space \text{si distribuisca uniformamente nella m-1 celle}\\
+
+h(k,2) \space \text{si distribuisca uniformamente nella m-2 celle}\\
+
+\end{align}
+
+$$
+
+$\simeq$ hashing uniforme semplice ad ogni iterazione
+
+  
+
+##### Ispezione lineare
+
+Data una funzione hash ordinaria $h': U \rightarrow {0,1,....m-1}$ che chiamando la _funzione hash ausiliaria_, il metodo dell'ispezione lineare usa la funzione hash
+
+$$
+
+h(K,i) = (h'(K)+i) \space \text{mod m}
+
+$$
+
+La prima cella esaminata è $T[h'(K)]$ poi continua a scandire tutte le celle sequenzialmente fino alla cella $m-1$ e poi riprende dalla dalla cella $0$ fino a $T[h'(K)+i]$
+
+  
+![[Pasted image 20230227125119.png]]
+
+_Vantaggi:_ Facile da implementare
+
+_Svantaggio:_ Agglomerazioni/Addensamenti primari $\rightarrow$ si formano lunghe file di celle occupate, che aumentano il tempo di ricerca.
+
+
+
+![[Pasted image 20230227125049.png]]
+
+##### Ispezione quadratica
+
+**Svantaggio**: Addensamento secondario: due chiavi distinte $K_1, K_2$ che sono mappate tramite $h'$ nello stesso valore $h'(k_{1}) = h'(k_{2})$, allora hanno la stessa sequenza d'ispezione. 
+
+**Osservazione**: la prima posizione determina l'intera sequenza di ispezioni, dunque per ogni chiave ci sono soltanto $m$ sequenze d'ispezioni distinte. 
+
+##### Doppio hashing 
+
+$h(k,i)= (h_{1}(k) + i h_{2}(k)) \mod{2}$ dove $h_{1}$ e $h_{2}$ sono funzioni di hashing ausiliarie.
+
+$$\begin{align}
+& h_{1}(k) = k \mod{13} \\
+& h_{2}(k) = 1 + (k \mod{11}) \\
+& h(k,i) = (h_{1}(k) + i h_{2}(k)) \mod{13} \\
+& \text{valori da inserire:} \ \ 69 \quad 4 \quad 31 \quad 43 \\
+& h(69,0) = h_{1}(69) = 4 \\
+& h(4,0) = h_{1}(4) = \color{red} 4 \ \text{collisione}\\
+& h(4,1) = h_{1}(4) + h_{2}(4)  \mod{13} = 4 + (1 + 4) = 9 \\
+& h(31,0) = h_{1}(31) = 5 \\
+& h(43,0) = h_{1}(43) = \color{red} 4 \ \text{collisione} \\
+& h(43,1) = h_{1}(43) + h_{2}(43)  \mod{13} = 2 \\
+\end{align}$$
+
+**Osservazione**: il doppio hashing usa $\Theta(m^{2})$ sequenze d'ispezioni perché ogni probabile coppia $(h_{1}, h_{2}(k))$ produce una *distinta* sequenza d'ispezioni.
+
+### Come costruire le funzioni hash
+
+Il valore $h_{2}(k)$ deve essere relativamente primo con la dimensione $m$. 
+Dimensione $m$ della tabella hash perché venga ispezionata l'intera tabella.
+
+Due possibili modi per costruire $h=(k)$:
+ 1) si può scegliere $m=2^{p}$ (potenza di 2) e definire $h_{2}$ in modo che produca sempre numeri dispari. ($m=2P \qquad h=(k)=2h'(k)+1$)
+ 2) si può scegliere $m$ come numero primo e definire $h_{2}$ in modo che restituisca sempre un numero intero positivo minore strettamente di $m$. ($h_{2}(k)=k \mod{m} \qquad h_{2}(k) = 1 +(k \mod{m'})$ dove $m'<m$)
+
+### Analisi dell'hashing e indirizzamento aperto
+
+> **Ipotesi**
+> si assume hashing uniforme, nessuna cancellazione
+
+Analisi in termini del fattore di carico $\alpha = \cfrac{n}{m}$
+
+$$0 \leq \alpha \leq 1$$
+> **Teorema**
+> nell'ipotesi di hashing uniforme, data una tabella hash a indirizzamento aperto con un fattore di carico $\alpha = \cfrac{n}{m} < 1$, il numero atteso d'ispezione in una <u>ricerca senza successo</u> è il massimo $\cfrac{1}{1-\alpha}$
 

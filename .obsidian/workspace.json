@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8e73e09c4342c848",
+        "id": "4673479c5158695f",
         "type": "tabs",
         "children": [
           {
-            "id": "3bb083b0a3eddc5e",
+            "id": "61b2fc876bdff2f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5086555480957,
-    "collapsed": true
+    "width": 255.5086555480957
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -157,13 +156,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "3bb083b0a3eddc5e",
+  "active": "61b2fc876bdff2f4",
   "lastOpenFiles": [
-    "other/Skelethon.md",
+    "other/Skeleton.md",
+    "ASD 2/Tabelle hash.md",
+    "Pasted image 20230227125119.png",
+    "photo_2023-02-27_12-47-39.jpg.md",
+    "Pasted image 20230227125049.png",
     "Basi di Dati 2/Anomalie e Dipendenze funzionali.md",
     "other",
     "Pasted image 20230224141654.png",
-    "ASD 2/Tabelle hash.md",
     "21-02-2023.md",
     "ASD 2/Algoritmi di ordinamento.md",
     "ASD 2/Untitled Diagram.svg",
