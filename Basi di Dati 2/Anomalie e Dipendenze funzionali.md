@@ -136,3 +136,4 @@ Sia $p=\set{R_{1}(T_{1}),R_{2}(T_{2})}$ una decomposizione di $R(T,F)$ si ha che
 
 Questo permette di ricondurre il problema di determinare se una certa decomposizione binaria preserva i dati al problema dell’implicazione, che ha costo **polinomiale**.
 
+

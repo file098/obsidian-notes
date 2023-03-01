@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "4673479c5158695f",
+        "id": "69ee3903c708d213",
         "type": "tabs",
         "children": [
           {
-            "id": "61b2fc876bdff2f4",
+            "id": "866e756f99d8f104",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ASD 2/Tabelle hash.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -95,9 +91,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "ASD 2/Tabelle hash.md"
-              }
+              "state": {}
             }
           },
           {
@@ -114,7 +108,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASD 2/Tabelle hash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +124,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASD 2/Tabelle hash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +134,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5
+    "width": 245.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,17 +149,23 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "61b2fc876bdff2f4",
+  "active": "866e756f99d8f104",
   "lastOpenFiles": [
-    "other/Skeleton.md",
-    "ASD 2/Tabelle hash.md",
-    "Pasted image 20230227125119.png",
     "photo_2023-02-27_12-47-39.jpg.md",
-    "Pasted image 20230227125049.png",
-    "Basi di Dati 2/Anomalie e Dipendenze funzionali.md",
-    "other",
-    "Pasted image 20230224141654.png",
     "21-02-2023.md",
+    "Pasted Images/Pasted image 20221011150521.png",
+    "Pasted Images/Pasted image 20220919093733.png",
+    "Basi di Dati 2/Forme normali.md",
+    "Pasted Images",
+    "Pasted Images/Pasted image 20230301123712.png",
+    "Pasted Images/Pasted image 20230301122628.png",
+    "Basi di Dati 2/Anomalie e Dipendenze funzionali.md",
+    "ASD 2/Tabelle hash.md",
+    "other/Skeleton.md",
+    "Pasted Images/Pasted image 20230227125119.png",
+    "Pasted Images/Pasted image 20230227125049.png",
+    "other",
+    "Pasted Images/Pasted image 20230224141654.png",
     "ASD 2/Algoritmi di ordinamento.md",
     "ASD 2/Untitled Diagram.svg",
     "Basi di Dati 1/SQL.md",
