@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "69ee3903c708d213",
+        "id": "92f6416c634a1250",
         "type": "tabs",
         "children": [
           {
-            "id": "866e756f99d8f104",
+            "id": "15e978b1b6af29e1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Basi di Dati 2/Forme normali.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -91,7 +95,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Basi di Dati 2/Forme normali.md"
+              }
             }
           },
           {
@@ -108,6 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Basi di Dati 2/Forme normali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,6 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Basi di Dati 2/Forme normali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,8 +157,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "866e756f99d8f104",
+  "active": "15e978b1b6af29e1",
   "lastOpenFiles": [
+    "README.md",
     "photo_2023-02-27_12-47-39.jpg.md",
     "21-02-2023.md",
     "Pasted Images/Pasted image 20221011150521.png",
