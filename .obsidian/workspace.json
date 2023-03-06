@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basi di Dati 2/Forme normali.md",
+                "file": "ASD 2/Programmazione dinamica.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5086555480957,
-    "collapsed": true
+    "width": 255.5086555480957
   },
   "right": {
     "id": "c3cd2a1ee1caeec3",
@@ -97,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Basi di Dati 2/Forme normali.md"
+                "file": "ASD 2/Programmazione dinamica.md"
               }
             }
           },
@@ -115,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Basi di Dati 2/Forme normali.md",
+                "file": "ASD 2/Programmazione dinamica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Basi di Dati 2/Forme normali.md",
+                "file": "ASD 2/Programmazione dinamica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +142,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5
+    "width": 245.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,12 +159,15 @@
   },
   "active": "15e978b1b6af29e1",
   "lastOpenFiles": [
+    "ASD 2/albero delle soluzioni 1.svg",
+    "ASD 2/Untitled Diagram.svg",
+    "ASD 2/Programmazione dinamica.md",
+    "Basi di Dati 2/Forme normali.md",
     "README.md",
     "photo_2023-02-27_12-47-39.jpg.md",
     "21-02-2023.md",
     "Pasted Images/Pasted image 20221011150521.png",
     "Pasted Images/Pasted image 20220919093733.png",
-    "Basi di Dati 2/Forme normali.md",
     "Pasted Images",
     "Pasted Images/Pasted image 20230301123712.png",
     "Pasted Images/Pasted image 20230301122628.png",
@@ -176,7 +179,6 @@
     "other",
     "Pasted Images/Pasted image 20230224141654.png",
     "ASD 2/Algoritmi di ordinamento.md",
-    "ASD 2/Untitled Diagram.svg",
     "Basi di Dati 1/SQL.md",
     "Basi di Dati 1/Untitled.md",
     "Basi di Dati 1/Algebra relazionale.md",
