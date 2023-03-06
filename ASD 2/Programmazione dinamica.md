@@ -108,3 +108,16 @@ Per risolvere un sottoproblema di dimensione *j*, il ciclo `for` effettua *j* it
 
 ### Bottom-up
 
+```python
+def bottom-up-cut-rod(p,n):
+	# Sia r[0,n] un nuovo vettore
+	r[0] = 0
+	for j=1 to n:
+		q = -1
+		for i=1 to j:
+			q = max(q, p[i] + r[j-i])
+		r[j] = q
+	return r[n]
+```
+
+**Complessità**: $\sum\limits^{n}_{j=1} j \Theta(1) = \Theta(\cfrac{n(n+1)}{2}) = \Theta(n^2)$ 
