@@ -81,3 +81,27 @@ Nessuno schema è contenuto in un altro, quindi nessuno di essi viene
 eliminato. Poiché $\{A, B, C\}$ è una superchiave di $R$, non è necessario  
 aggiungere altri schemi. 
 
+### Proprietà 
+
+Vantaggi: 
+
+- L’algoritmo di conversione in 3NF **preserva i dati e le dipendenze ** 
++ L’algoritmo di conversione in 3NF ha costo **polinomiale**, perché non richiede il calcolo delle proiezioni  
+
+Difetti:
+
+- Verificare se uno schema è in 3NF ha costo **esponenziale**, perché richiede di identificare gli attributi primi  
+- Uno schema in 3NF può ancora contenere **anomalie**
+
+
+**Cosa dobbiamo fare quando uno schema è di scarsa qualità? **
+
+
+> **Strategia 1**
+>Convertiamo lo schema in BCNF per eliminare le anomalie. Se notiamo che la conversione non ha preservato le dipendenze, ci accontentiamo di una conversione in 3NF.  (scarsa efficienza)
+
+> **Strategia 2**  
+> Convertiamo lo schema in 3NF in modo da preservare dati e dipendenze. Se per fortuna otteniamo BCNF, meglio perché non vi sono anomalie! 
+
+Quale di queste strategie è tipicamente attuabile in uno scenario reale?
+

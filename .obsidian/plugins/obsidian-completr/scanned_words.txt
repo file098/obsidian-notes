@@ -710,6 +710,9 @@ altro
 alcuno
 aggiungi
 aggiungere
+ancora
+accontentiamo
+attuabile
 perso
 per
 permutazione
@@ -1078,6 +1081,7 @@ piccoli
 proiezioni
 precedente
 partenza
+preservato
 min
 meglio
 ma
@@ -1828,6 +1832,7 @@ disciplinati
 detto
 decompone
 dimostriamo
+dobbiamo
 lezione
 le
 la
@@ -3138,6 +3143,7 @@ eliminazione
 equivalenti
 essi
 eliminato
+efficienza
 ordino
 orginare
 ordinamento
@@ -3445,6 +3451,7 @@ osTS
 obsidian
 originale
 osserviamo
+otteniamo
 tre
 tipologie
 tale
@@ -5073,6 +5080,7 @@ irn
 ioo
 iWv
 iegg
+identificare
 nodo
 noistri
 nell
@@ -5383,6 +5391,7 @@ nostro
 normalizzazione
 nuovi
 nuovo
+notiamo
 Ogni
 Omega
 On
@@ -6136,6 +6145,9 @@ sulla
 seleziona
 simmetrico
 sintesi
+scarsa
+strategie
+scenario
 Significa
 SGw
 Stv
@@ -6436,6 +6448,7 @@ SF
 SU
 Sbb
 Sostituisci
+Strategia
 confronta
 che
 correggere
@@ -6857,6 +6870,7 @@ ciascun
 crea
 contenuto
 costituiscano
+contenere
 foglia
 foto
 foglie
@@ -7192,6 +7206,7 @@ fjjJ
 fMm
 fZ
 frg
+fortuna
 veloce
 volta
 version
@@ -7815,6 +7830,8 @@ qV
 qqh
 qSr
 qqq
+qualit
+queste
 Costruisco
 Cvsc
 CeElkXA
@@ -8125,6 +8142,8 @@ Calcola
 Correttezza
 Consideriamo
 Costruisci
+Cosa
+Convertiamo
 Tempo
 Theta
 TIyReC
@@ -9000,6 +9019,7 @@ QZ
 Qdw
 QEE
 QCM
+Quale
 ha
 height
 html
@@ -10257,6 +10277,7 @@ remote
 ritorno
 ricorsivamente
 relazionale
+reale
 xmlns
 xFVeT
 xJM
