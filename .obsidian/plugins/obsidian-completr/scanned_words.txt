@@ -349,6 +349,7 @@ AX
 AQ
 AB
 Abbiamo
+Aspetti
 alle
 albero
 an
@@ -1093,6 +1094,8 @@ prezzo
 parametro
 programmazione
 possibilit
+problemi
+precedentemente
 min
 meglio
 ma
@@ -1444,6 +1447,8 @@ mal
 massima
 memorizzando
 margin
+memorization
+memorized
 di
 da
 disegnare
@@ -2475,6 +2480,7 @@ Dimostriamo
 Difetti
 DOCTYPE
 DTD
+Dunque
 Per
 PPz
 PpPy
@@ -3179,6 +3185,7 @@ efficiente
 espresso
 esprimibile
 evitando
+effettua
 ordino
 orginare
 ordinamento
@@ -3493,6 +3500,8 @@ ottime
 output
 ottiene
 overflow
+ordina
+ottenute
 tre
 tipologie
 tale
@@ -3829,6 +3838,7 @@ tagliare
 tagli
 taglio
 top
+totale
 In
 Il
 ItLuyLNtLYC
@@ -4429,6 +4439,7 @@ gS
 garantire
 garantisce
 generazione
+giunge
 un
 una
 unico
@@ -5132,6 +5143,8 @@ iWv
 iegg
 identificare
 inline
+iniziando
+iterazioni
 nodo
 noistri
 nell
@@ -6207,6 +6220,8 @@ suddividere
 secondo
 sizing
 space
+sola
+sottoproblema
 Significa
 SGw
 Stv
@@ -6938,6 +6953,8 @@ calcolati
 computazione
 ciascuno
 center
+ciclo
+cut
 foglia
 foto
 foglie
@@ -8547,6 +8564,7 @@ TSS
 TWW
 TGG
 Take
+Top
 Un
 Uptheta
 UkAUbjRFjJfkJxfuvIG
@@ -10372,6 +10390,14 @@ risultando
 rounded
 risolve
 ricalcolarle
+ricordando
+risolti
+ricorsiva
+risolto
+ramo
+risolvere
+ricorsive
+rod
 xmlns
 xFVeT
 xJM
@@ -13333,6 +13359,7 @@ Bz
 Bb
 Boyce
 BCNF
+Bottom
 YcfrgMOo
 YoOdYuBpSxOxRfwuErTnuymf
 Ys

@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASD 2/Programmazione dinamica.md",
+                "file": "Basi di Dati 2/Forme normali.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bfe35f1b792fb36e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Basi di Dati 2/Vincoli di integrità.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASD 2/Programmazione dinamica.md"
+                "file": "Basi di Dati 2/Vincoli di integrità.md"
               }
             }
           },
@@ -114,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASD 2/Programmazione dinamica.md",
+                "file": "Basi di Dati 2/Vincoli di integrità.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASD 2/Programmazione dinamica.md",
+                "file": "Basi di Dati 2/Vincoli di integrità.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,12 +170,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "15e978b1b6af29e1",
+  "active": "bfe35f1b792fb36e",
   "lastOpenFiles": [
+    "Basi di Dati 2/Forme normali.md",
+    "Basi di Dati 2/Vincoli di integrità.md",
+    "Basi di Dati 2/Anomalie e Dipendenze funzionali.md",
+    "ASD 2/Programmazione dinamica.md",
     "ASD 2/albero delle soluzioni 1.svg",
     "ASD 2/Untitled Diagram.svg",
-    "ASD 2/Programmazione dinamica.md",
-    "Basi di Dati 2/Forme normali.md",
     "README.md",
     "photo_2023-02-27_12-47-39.jpg.md",
     "21-02-2023.md",
@@ -171,7 +186,6 @@
     "Pasted Images",
     "Pasted Images/Pasted image 20230301123712.png",
     "Pasted Images/Pasted image 20230301122628.png",
-    "Basi di Dati 2/Anomalie e Dipendenze funzionali.md",
     "ASD 2/Tabelle hash.md",
     "other/Skeleton.md",
     "Pasted Images/Pasted image 20230227125119.png",
