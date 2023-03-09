@@ -1096,6 +1096,8 @@ programmazione
 possibilit
 problemi
 precedentemente
+punto
+possiamo
 min
 meglio
 ma
@@ -1860,6 +1862,7 @@ distinti
 down
 div
 display
+delicato
 lezione
 le
 la
@@ -3186,6 +3189,8 @@ espresso
 esprimibile
 evitando
 effettua
+effettuano
+evidenzia
 ordino
 orginare
 ordinamento
@@ -3839,6 +3844,8 @@ tagli
 taglio
 top
 totale
+tipi
+tuple
 In
 Il
 ItLuyLNtLYC
@@ -6222,6 +6229,10 @@ sizing
 space
 sola
 sottoproblema
+specificati
+sistema
+sintassi
+specificare
 Significa
 SGw
 Stv
@@ -6955,6 +6966,10 @@ ciascuno
 center
 ciclo
 cut
+creazione
+controllati
+certe
+coincida
 foglia
 foto
 foglie
@@ -7296,6 +7311,7 @@ forza
 fatta
 foreignObject
 flex
+fase
 veloce
 volta
 version
@@ -7615,6 +7631,8 @@ vettore
 vengono
 volte
 visible
+vincoli
+violarli
 qualsiasi
 qquad
 quad
@@ -8833,6 +8851,7 @@ University
 Uno
 UTF
 Usando
+Unique
 Quante
 Qu
 Qpue
@@ -13952,6 +13971,7 @@ EeQVV
 EGG
 Elimina
 EN
+Example
 NZWgl
 NixWUtpRmo
 NsFk
@@ -14308,6 +14328,7 @@ Nqaz
 Notes
 Nel
 Nessuno
+NULL
 KIcMYWqBSgRByAqvg
 KBnd
 KDQmQgGbBQ
@@ -15850,6 +15871,7 @@ VW
 VWFN
 VUYYY
 Verificare
+Vedremo
 jvIwt
 joC
 jXAU
